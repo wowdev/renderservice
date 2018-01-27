@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<scene>
+<image width="800" height="800" />
+<viewport farClip="1000" nearClip="1" />
+<backgrounds>
+<positions scale="1.0" x="0" y="-15" z="-50" fitToScreen="true" />
+</backgrounds>
+<imageAnimation framesPerSecond="5" />
+<imageRotation frames="5" rotateDelta="0" />
+</scene>

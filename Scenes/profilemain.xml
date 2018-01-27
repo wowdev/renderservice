@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+<image width="1920" height="1080"></image>
+<viewPort farClip="1000" nearClip="0.1" fieldOfView="90"></viewPort>
+<backgrounds>
+<positions>
+<position key="race-human,sex-male" z="3" y="2" fitToScreen="true"></position>
+<position key="race-worgen,sex-male" z="3" y="2" fitToScreen="true"></position>
+<position key="race-tauren,sex-male" z="3" y="2" fitToScreen="true"></position>
+</positions>
+<background key="race-human,sex-male"></background>
+<background key="race-worgen,sex-male"></background>
+<background key="race-tauren,sex-male"></background>
+</backgrounds>
+</config>
