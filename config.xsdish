@@ -3,8 +3,8 @@
 	<listen port="integer"/>
 	<bnet-api path="string" timeout="integer" max-connections="integer"/>
 	<scenes path="string"/>
-	<manifest region="inteer" locale="integer" audio-locale="integer" prefer-alternate="bool"/>
+	<manifest region="integer" locale="integer" audio-locale="integer" prefer-alternate="bool"/>
 	<cas product="string" patch="integer" build="integer"/>
 	<log path="string" level="integer"/>
-	<thread low-priority-coun="integer"/>
+	<thread low-priority-count="integer"/> <!-- has weird effects, including that non-1 makes it unresponsive -->
 </config>
