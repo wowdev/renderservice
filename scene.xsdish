@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<scene>
+	<image width="integer" height="integer"/>
+	<viewPort farClip="float" nearClip="float" fieldOfView="float" orthoProj="bool"/>
+	<animation>
+		<id>integer</id>
+		<subid>integer</subid>
+		<timer>integer</timer>
+		<rot>float</rot>
+		<weapons>enum{"melee", "ranged"?}</weapons>
+	</animation>
+	<config><useHelmet>bool</useHelmet></config>
+	
+	<backgrounds>
+		<positions scale="1.0" x="0" y="0" z="-50" fitToScreen="true" />
+		<background key="not sure">
+			<lights> <!-- multiple -->
+				<light>
+					<position>
+						<x>float</x>
+						<y>float</y>
+						<z>float</z>
+					</position>
+					<ambientColor><red/><green/><blue/></ambientColor>
+					<diffuseColor><red/><green/><blue/></diffuseColor>
+				</light>
+			</lights>
+		</background>
+	</backgrounds>
+	
+	<imageAnimation framesPerSecond="integer" crossFade="integer"/>
+	<imageRotation frames="integer" rotateDelta="float"/>
+</scene>
