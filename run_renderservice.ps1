@@ -8,7 +8,7 @@ $tmppath = $tmp.FullName
 
 Write "<?xml version=`"1.0`" encoding=`"UTF-8`" standalone=`"no`" ?>" | Out-File "$tmppath"
 Write "<config>" | Out-File -Append "$tmppath"
-Write "  <scenes path=`"$scenes_dir`" />" | Out-File -Append "$tmppath"
+Write "  <scenes path=`"$scenes_dir\`" />" | Out-File -Append "$tmppath"
 Write "  <log path=`"$log_dir`" level=`"$log_level`" />" | Out-File -Append "$tmppath"
 Write "  <cas $product />" | Out-File -Append "$tmppath"
 Write "  <thread low-priority-count=`"1`" />" | Out-File -Append "$tmppath"
