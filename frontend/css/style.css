@@ -1,0 +1,134 @@
+html {
+	height: 100%;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: #001D28;
+	overflow: hidden;
+}
+
+.render-canvas {
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+	text-align: center;
+}
+
+.render-canvas img{
+	height: 99%;
+}
+
+.genericbutton {
+	position: absolute;
+	cursor: pointer;
+	top: 20px;
+	right: 20px;
+	width: 46px;
+	height: 46px;
+	border: 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	transition: background-color 0.1s ease;
+	border-radius: 50%;
+	outline: none;
+	z-index: 2;
+}
+
+.genericbutton:hover,
+.genericbutton:focus {
+	background-color: #64B5F6;
+}
+
+
+.hamburger {
+	position: absolute;
+	cursor: pointer;
+	top: 20px;
+	left: 20px;
+	width: 46px;
+	height: 46px;
+	border: 0;
+	background-color: rgba(255, 255, 255, 0.3);
+	transition: background-color 0.1s ease;
+	border-radius: 50%;
+	outline: none;
+	z-index: 2;
+}
+
+.hamburger:hover,
+.hamburger:focus {
+	background-color: #64B5F6;
+}
+
+.hamburger .icon-bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	background-color: black;
+	border-radius: 1px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.hamburger .icon-bar + .icon-bar {
+	margin-top: 4px;
+}
+
+.sidebar {
+	top: 0;
+	left: 0;
+	width: 350px;
+	height: auto;
+	border-bottom-right-radius: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 60px;
+	transition: left 0.3s ease-out;
+}
+
+.sidebar.closed {
+	left: -350px;
+}
+
+.sidebar select {
+	height: 32px;
+	margin: 0;
+	border: 0;
+	outline: 0;
+	background-color: transparent;
+	border-bottom: 1px solid #333;
+}
+
+.generics{
+	top: 0;
+	right: 0px;
+	width: 350px;
+	height: auto;
+	border-bottom-left-radius: 6px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	transition: right 0.3s ease-out;
+}
+
+.generics.closed {
+	right: -350px;
+}
+
+.generics input{
+	max-width: 100px;
+}
+
+.overlay{
+	background-color: rgba(255, 255, 255, 0.8);
+	position: absolute;
+	z-index: 1;
+	overflow: auto;
+}
