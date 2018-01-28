@@ -1,105 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style type='text/css'>
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
-#options{
-    width: 25%;
-    height: 100%;
-    float: left;
-}
-
-#canvas{
-    width: 75%;
-    max-height: 100%;
-    float: left;
-}
-</style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Secret Frontend</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id='options'>
-<form id='optionForm' method='GET'>
-<b>Endpoint</b><br>
-<input type='radio' name='endpoint' value='wow/m2' id='m2endpoint' CHECKED><label for='m2endpoint'>M2</label>
-<input type='radio' name='endpoint' value='wow/wmo' id='wmoendpoint'><label for='wmoendpoint'>WMO</label>
-<input type='radio' name='endpoint' value='wow/maps' id='mapendpoint'><label for='mapendpoint'>Map</label>
-<!--
-<input type='radio' name='endpoint' value='wow/creature' id='creatureendpoint'><label for='creatureendpoint'>Creature</label>
-<input type='radio' name='endpoint' value='wow/creatureDisplayInfo' id='cdiendpoint'><label for='cdiendpoint'>CDI</label>
-<input type='radio' name='endpoint' value='wow/pet' id='petendpoint'><label for='petendpoint'>Pet</label>
-<input type='radio' name='endpoint' value='wow/mount' id='mountendpoint'><label for='mountendpoint'>Mount</label>
-<input type='radio' name='endpoint' value='wow/item' id='itemendpoint'><label for='itemendpoint'>Item</label>
--->
-<br><b>Args</b><br>
-<label for='arg1' id='arg1label'>filedataid</label><input id='arg1' type='text' name='arg1' placeholder=''><br>
-<label for='pos' id='poslabel'>pos</label><input class='opt' data-endpoint='wow/maps' id='pos' taype='text' name='pos'><br>
-<label for='coord' id='coordlabel'>coord</label><input class='opt' data-endpoint='wow/maps' id='coord' taype='text' name='coord'><br>
-<label for='rect' id='rectlabel'>rect</label><input class='opt' data-endpoint='wow/maps' id='rect' taype='text' name='rect'><br>
-<input type='submit' value='Render'>
-</form>
-</div>
-<img id='canvas'>
-<script type='text/javascript'>
-var renderServiceURL = "http://render.marlamin.com:2082/";
-var endPoint = "wow/m2";
+    <button id="js-sidebar-button" class="hamburger">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
 
-/* Endpoint stuff */
-toggleEndPointOptions();
+    <div id="js-sidebar" class="overlay sidebar">
+        <h3>Options</h3>
+        <div>
+            <form id='optionForm' method='GET'>
+                <b>Endpoint</b><br>
+                <input type='radio' name='endpoint' value='wow/m2' id='m2endpoint' CHECKED><label for='m2endpoint'>M2</label>
+                <input type='radio' name='endpoint' value='wow/wmo' id='wmoendpoint'><label for='wmoendpoint'>WMO</label>
+                <input type='radio' name='endpoint' value='wow/maps' id='mapendpoint'><label for='mapendpoint'>Map</label>
+                <!--
+                <input type='radio' name='endpoint' value='wow/creature' id='creatureendpoint'><label for='creatureendpoint'>Creature</label>
+                <input type='radio' name='endpoint' value='wow/creatureDisplayInfo' id='cdiendpoint'><label for='cdiendpoint'>CDI</label>
+                <input type='radio' name='endpoint' value='wow/pet' id='petendpoint'><label for='petendpoint'>Pet</label>
+                <input type='radio' name='endpoint' value='wow/mount' id='mountendpoint'><label for='mountendpoint'>Mount</label>
+                <input type='radio' name='endpoint' value='wow/item' id='itemendpoint'><label for='itemendpoint'>Item</label> -->
+                <br><b>Args</b><br>
+                <label for='arg1' id='arg1label'>filedataid</label><input id='arg1' type='text' name='arg1' placeholder='' value=''><br>
+                <br><b>Options</b><br>
+                <table id='m2Table'></table>
+                <table id='wmoTable'></table>
+                <table id='mapsTable'></table>
+                <input type='submit' value='Render'>
+            </form>
+        </div>
+    </div>
+    <button id="js-generics-button" class="genericbutton">
+        <i class="fa fa-map-marker fa-2x"></i>
+    </button>
 
-var endpoints = document.querySelectorAll('input[name="endpoint"]');
-[].forEach.call(endpoints, function(radio) {
-   radio.addEventListener('change', endpointChange);
-});
+    <div id="js-generics" class="overlay generics">
+        <table id='genericTable'></table>
+    </div>
+    <div class='render-canvas'><img id='canvas'></div>
 
-function endpointChange(event) {
-    console.log("Endpoint change: " + this.value);
-    endPoint = this.value;
-    toggleEndPointOptions(endPoint);
-    var label = document.getElementById("arg1label");
-    switch(this.value){
-        case "wow/maps":
-            label.innerHTML = 'mapid';
-            break;
-        case "wow/wmo":
-        case "wow/m2":
-            label.innerHTML = 'filedataid';
-            break;
-        default:
-            label.innerHTML = 'arg 1';
-            break;
-    }
-}
-
-function toggleEndPointOptions(){
-    var opts = document.querySelectorAll('.opt');
-    [].forEach.call(opts, function(opt) {
-       if(endPoint != opt.dataset.endpoint){
-            opt.style.display = 'none';
-            document.getElementById(opt.id + "label").style.display = 'none';
-       }else{
-            opt.style.display = 'inline-block';
-            document.getElementById(opt.id + "label").style.display = 'inline-block';
-       }
-    });
-}
-/* Form submit / render */
-document.querySelector("#optionForm").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    var arg1 = document.getElementById("arg1").value;
-    if(arg1.length == 0){
-        console.log("invalid arg");
-        return;
-    }
-
-    var url = renderServiceURL + endPoint + "/" + arg1;
-
-    document.getElementById("canvas").src = url;
-});
-</script>
+<script type="text/javascript" src="js/render.js"></script>
 </body>
 </html>
