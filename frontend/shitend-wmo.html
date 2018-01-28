@@ -1,0 +1,40 @@
+<html>
+<head>
+<script>
+var url = "127.0.0.1:12346";
+var time = new Date();
+var anim_len = 10000;
+
+function update() {
+var modelfileid = document.getElementById("modelid").value;
+var scale = document.getElementById("scale").value;
+var trans = document.getElementById("trans").value;
+var rot = (((time % anim_len) / anim_len) * 3.14 * 2.0);
+var now = new Date();
+var resolution = "&imgSize=" + canvas.width + "," + canvas.height;
+var src = "http://" + url + "/wow/wmo/" + modelfileid 
+		+ "?animRot=" + rot 
+        + "&animTimer=" + (now - time) 
+		+ "&trans=" + trans 
+		+ "&scale=" + scale 
+		+ "&showFog=false" 
+		+ resolution
+		;
+	canvas.src = src;
+	time  = now;
+	canvas.addEventListener('load', update);
+}
+</script>
+</head>
+<body>
+<input id="modelid" value="1608489" />
+<input id="scale" value="0.5" />
+<input id="trans" value="0,0,-30" />
+<br/>
+<img id="canvas" width=1024 height=1024/>
+<script>
+var canvas = document.getElementById("canvas");
+update();
+</script>
+</body>
+</html>
