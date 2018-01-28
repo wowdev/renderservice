@@ -215,11 +215,24 @@
         e.preventDefault();
         sendRequest();
     });
+
+    function inputChangeEventHandler(event){
+        if(document.getElementById("autoupdate").checked){
+            sendRequest();
+        }
+    }
+
     function endpointChange(event) {
         console.log("Endpoint change: " + this.value);
         endPoint = this.value;
         toggleEndPointOptions(endPoint);
         var label = document.getElementById("arg1label");
+        if(this.value == "wow/maps"){
+            document.getElementById("autoupdate").checked = false;
+            document.getElementById("autoupdate").disabled = true;
+        }else{
+            document.getElementById("autoupdate").disabled = false;
+        }
         switch(this.value){
             case "wow/maps":
             label.innerHTML = 'mapid';
@@ -272,7 +285,7 @@
                 break;
             }
 
-            var inputHtml = "<tr><td><input onkeypress='return handleKey(event)' data-endpoint='wow/" + endpoint + "' class='" + endpoint + "Option opt' id='" + key + "Input' type='" + inputType + "' name='" + key + "'></td><td><label id='" + key + "Label' for='" + key + "Input'>" + key + "</label></td></tr>";
+            var inputHtml = "<tr><td><input onchange='return inputChangeEventHandler(event)' oninput='return inputChangeEventHandler(event)' onkeypress='return handleKey(event)' data-endpoint='wow/" + endpoint + "' class='" + endpoint + "Option opt' id='" + key + "Input' type='" + inputType + "' name='" + key + "'></td><td><label id='" + key + "Label' for='" + key + "Input'>" + key + "</label></td></tr>";
 
             document.getElementById(endpoint + "Table").insertAdjacentHTML('beforeend', inputHtml);
 
