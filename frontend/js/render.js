@@ -303,8 +303,8 @@
 
         var opts = document.querySelectorAll('.opt');
         Array.prototype.forEach.call(opts, function(opt) {
-            // check if value isnt empty
-            if(opt.value){
+            // check if value isnt empty and if opt is for the current endpoint and/or generic
+            if(opt.value && (opt.dataset.endpoint == endPoint || opt.dataset.endpoint == "wow/generic")){
                 // Are we at the start of queryString? Start with ?, otherwise start with &
                 if(firstGet){
                     queryString += '?';
