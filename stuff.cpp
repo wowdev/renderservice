@@ -79,7 +79,14 @@ maps_args:
 	lightCol: hexcolor = 0xff808080
 	ambCol: hexcolor = 0xff202020
 	areaLightWater: bool = false
-		
+	
+	override:
+		scale = 1.0
+		pitch = 1.0
+		yaw = 1.0
+		trans = pos
+		fitToScreen = false
+	
 m2_args:
 	if request_path is numeric:
 		fileID = atoi (request_path)
