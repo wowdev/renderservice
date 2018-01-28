@@ -17,4 +17,6 @@ Write "</config>" | Out-File -Append "$tmppath"
 
 cat $tmppath
 
-& "$install_dir\RenderService-64.exe" -port $port -config $tmppath
+"$install_dir\RenderService-64.exe -port $port -config $tmppath -level $gxlevel"
+
+& "$install_dir\RenderService-64.exe" -port $port -config $tmppath -level $gxlevel
