@@ -1,3 +1,6 @@
+all requests:
+	scene: string = depends on endpoint
+
 parse_generic_args1:
 	backgroundColor: hexcolor = 0
 	portalsEnabled: bool = true
@@ -51,7 +54,7 @@ wmo_args:
 	if request_path is numeric:
 		fileName: string = "debug"
 		fileID = atoi (request_path)
-	else:
+	else:                                        # as of WOW-25902patch8.0.1_Beta this is broken and will never trigger due to an off-by-one error
 		path: string = ""
 		filePath = path + "/" + request_path
 	miniMap: bool = false
@@ -80,7 +83,7 @@ maps_args:
 m2_args:
 	if request_path is numeric:
 		fileID = atoi (request_path)
-	else:
+	else:                                       # as of WOW-25902patch8.0.1_Beta this is broken and will never trigger due to an off-by-one error
 		path: string = ""
 		filePath = path + "/" + request_path
 	enableGeosetList: bool = false
