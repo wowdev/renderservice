@@ -7,3 +7,6 @@ $log_level = 100
 $product = 'product="wow_beta" patch="80001" build="25902"'
 
 $gxlevel = 9
+
+$msvcpp = "Visual Studio 15 2017 Win64"
+$msvs_short = "vs2017"

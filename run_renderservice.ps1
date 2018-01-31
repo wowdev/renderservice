@@ -1,7 +1,8 @@
-﻿$script_dir = (split-path $MyInvocation.MyCommand.Path) 
-. $script_dir/config.ps1
-
+﻿$ErrorActionPreference = "Stop"
 $PSDefaultParameterValues['*:Encoding'] = 'utf8'
+$script_dir = (split-path $MyInvocation.MyCommand.Path) 
+
+. $script_dir/config.ps1
 
 $tmp = New-TemporaryFile
 $tmppath = $tmp.FullName
@@ -18,5 +19,7 @@ Write "</config>" | Out-File -Append "$tmppath"
 cat $tmppath
 
 "$install_dir\RenderService-64.exe -port $port -config $tmppath -level $gxlevel"
-
-& "$install_dir\RenderService-64.exe" -port $port -config $tmppath -level $gxlevel
+& { 
+  $ErrorActionPreference='continue'
+  & "$install_dir\RenderService-64.exe" -port $port -config $tmppath -level $gxlevel 2>&1
+}
