@@ -1,0 +1,195 @@
+<html>
+<head>
+<script>
+function replace_img (id, pos, tar, sc)
+{
+  var url = 'http://localhost:12346/wow/map/18877?unique='+new Date().getTime();
+  if (id) { url += '&map_id=' + id; map_id.value = id; }
+  if (pos) { url += '&position=' + pos; position.value = pos; }
+  if (tar) { url += '&target=' + tar; target.value = tar; }
+  if (sc) { url += '&scene=' + sc; scene.value = sc; }
+  document.getElementById ('WorldFrame').src = url;
+  last_url = url;
+  return false;
+}
+function refresh()
+{
+  replace_img (map_id.value, position.value, target.value, scene.value);
+}
+function onKeyPress(e) {
+    if (e.keyCode == 13) {
+        refresh();
+        return false;
+    }
+}
+
+function Vector(x, y, z) {
+  if (typeof x === "string")
+  {
+    var parts = x.split (",");
+    this.x = parseFloat (parts[0] || "0");
+    this.y = parseFloat (parts[1] || "0");
+    this.z = parseFloat (parts[2] || "0");
+  }
+  else
+  {
+    this.x = x || 0;
+    this.y = y || 0;
+    this.z = z || 0;
+  }
+}
+Vector.prototype = {
+  toString: function() {
+    return (this.x).toFixed(3) + "," + (this.y).toFixed(3) + "," + (this.z).toFixed(3);
+  },
+  negative: function() {
+    return new Vector(-this.x, -this.y, -this.z);
+  },
+  add: function(v) {
+    if (v instanceof Vector) return new Vector(this.x + v.x, this.y + v.y, this.z + v.z);
+    else return new Vector(this.x + v, this.y + v, this.z + v);
+  },
+  subtract: function(v) {
+    if (v instanceof Vector) return new Vector(this.x - v.x, this.y - v.y, this.z - v.z);
+    else return new Vector(this.x - v, this.y - v, this.z - v);
+  },
+  multiply: function(v) {
+    if (v instanceof Vector) return new Vector(this.x * v.x, this.y * v.y, this.z * v.z);
+    else return new Vector(this.x * v, this.y * v, this.z * v);
+  },
+  divide: function(v) {
+    if (v instanceof Vector) return new Vector(this.x / v.x, this.y / v.y, this.z / v.z);
+    else return new Vector(this.x / v, this.y / v, this.z / v);
+  },
+  equals: function(v) {
+    return this.x == v.x && this.y == v.y && this.z == v.z;
+  },
+  dot: function(v) {
+    return this.x * v.x + this.y * v.y + this.z * v.z;
+  },
+  cross: function(v) {
+    return new Vector(
+      this.y * v.z - this.z * v.y,
+      this.z * v.x - this.x * v.z,
+      this.x * v.y - this.y * v.x
+    );
+  },
+  length: function() {
+    return Math.sqrt(this.dot(this));
+  },
+  unit: function() {
+    return this.divide(this.length());
+  },
+  min: function() {
+    return Math.min(Math.min(this.x, this.y), this.z);
+  },
+  max: function() {
+    return Math.max(Math.max(this.x, this.y), this.z);
+  },
+  toAngles: function() {
+    return {
+      theta: Math.atan2(this.z, this.x),
+      phi: Math.asin(this.y / this.length())
+    };
+  },
+  angleTo: function(a) {
+    return Math.acos(this.dot(a) / (this.length() * a.length()));
+  },
+  toArray: function(n) {
+    return [this.x, this.y, this.z].slice(0, n || 3);
+  },
+  clone: function() {
+    return new Vector(this.x, this.y, this.z);
+  },
+  init: function(x, y, z) {
+    this.x = x; this.y = y; this.z = z;
+    return this;
+  },
+  normalize: function() {
+    var l = this.length();
+    return new Vector (this.x / l, this.y / l, this.z / l);
+  }
+};
+Vector.negative = function(a, b) {
+  b.x = -a.x; b.y = -a.y; b.z = -a.z;
+  return b;
+};
+Vector.add = function(a, b, c) {
+  if (b instanceof Vector) { c.x = a.x + b.x; c.y = a.y + b.y; c.z = a.z + b.z; }
+  else { c.x = a.x + b; c.y = a.y + b; c.z = a.z + b; }
+  return c;
+};
+Vector.subtract = function(a, b, c) {
+  if (b instanceof Vector) { c.x = a.x - b.x; c.y = a.y - b.y; c.z = a.z - b.z; }
+  else { c.x = a.x - b; c.y = a.y - b; c.z = a.z - b; }
+  return c;
+};
+Vector.multiply = function(a, b, c) {
+  if (b instanceof Vector) { c.x = a.x * b.x; c.y = a.y * b.y; c.z = a.z * b.z; }
+  else { c.x = a.x * b; c.y = a.y * b; c.z = a.z * b; }
+  return c;
+};
+Vector.divide = function(a, b, c) {
+  if (b instanceof Vector) { c.x = a.x / b.x; c.y = a.y / b.y; c.z = a.z / b.z; }
+  else { c.x = a.x / b; c.y = a.y / b; c.z = a.z / b; }
+  return c;
+};
+Vector.cross = function(a, b, c) {
+  c.x = a.y * b.z - a.z * b.y;
+  c.y = a.z * b.x - a.x * b.z;
+  c.z = a.x * b.y - a.y * b.x;
+  return c;
+};
+Vector.unit = function(a, b) {
+  var length = a.length();
+  b.x = a.x / length;
+  b.y = a.y / length;
+  b.z = a.z / length;
+  return b;
+};
+Vector.fromAngles = function(theta, phi) {
+  return new Vector(Math.cos(theta) * Math.cos(phi), Math.sin(phi), Math.sin(theta) * Math.cos(phi));
+};
+Vector.randomDirection = function() {
+  return Vector.fromAngles(Math.random() * Math.PI * 2, Math.asin(Math.random() * 2 - 1));
+};
+Vector.min = function(a, b) {
+  return new Vector(Math.min(a.x, b.x), Math.min(a.y, b.y), Math.min(a.z, b.z));
+};
+Vector.max = function(a, b) {
+  return new Vector(Math.max(a.x, b.x), Math.max(a.y, b.y), Math.max(a.z, b.z));
+};
+Vector.lerp = function(a, b, fraction) {
+  return b.subtract(a).multiply(fraction).add(a);
+};
+Vector.fromArray = function(a) {
+  return new Vector(a[0], a[1], a[2]);
+};
+Vector.angleBetween = function(a, b) {
+  return a.angleTo(b);
+};
+
+function randomize() {
+  var tar = new Vector (position.value).add (Vector.fromAngles(Math.random() * Math.PI * 2, 0).multiply (1000));
+  target.value = tar.toString();
+  refresh();
+}
+</script>
+</head>
+<body>
+<label for="map_id">map_id: </label><input type="text" id="map_id" value="1" onkeypress="return onKeyPress(event)"/>
+<label for="position">position: </label><input type="text" id="position" value="0,0,50" onkeypress="return onKeyPress(event)"/>
+<label for="target">target: </label><input type="text" id="target" value="0,-1,50" onkeypress="return onKeyPress(event)"/>
+<label for="scene">scene: </label><input type="text" id="scene" value="item" onkeypress="return onKeyPress(event)"/>
+<input type="button" value="randomize" onclick="randomize(); return false;"/>
+<input type="button" value="go" onclick="refresh(); return false;"/><br/>
+<a href="#" onclick='return replace_img (1, "150,-300,120", "1024,0,70", null);'>Stonetalon Mountain</a>&nbsp;|&nbsp;
+<a href="#" onclick='return replace_img (530, "-200,1200,150", "-200,1000,150", null);'>Dark Portal (Outland)</a>&nbsp;|&nbsp;
+<a href="#" onclick='return replace_img (571, "3000,0,500", "4000,0,200", null);'>Dragonblight</a>&nbsp;|&nbsp;
+<a href="#" onclick='return replace_img (870, "900,400,550", "965,0,200", null);'>MoP Alliance Shrine</a>&nbsp;|&nbsp;
+<a href="#" onclick='return replace_img (870, "920,320,480", "1200,0,0", null);'>MoP Alliance Shrine Lower</a>
+<!-- <a href="#" onclick='return replace_img (MAP, "POS", "TAR", null);'>XXXX</a>&nbsp;|&nbsp; -->
+<br/>
+<img id="WorldFrame" name="WorldFrame" src="http://localhost:12345/wow/item/18877" onclick='document.getElementById ("WorldFrame").src += "&reload"; return false;'>
+</body>
+</html>
