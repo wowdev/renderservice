@@ -46,11 +46,12 @@
 5378839760 aAvTsgrowablear_51
 5374967928 aMissingIhdrBef_0
 5375470856 aQuestinfo
+5375548120 aPatchEntry
 5374935168 aConnectionTime
 5375074776 aUnitSSetTheMod
 5376148448 aIoError
 5378844336 ??_R0?AV?$TSFixedArray@V?$TSExplicitList@VCMapTexture@@$0?CCCCCCCD@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5372488384 WSAGetLastError_0
+5375077056 aNamedPointSear
 5375230088 aGlcopytexsubim
 5375612268 aOcircumflex
 5375099024 aWstaticdoodadi
@@ -144,12 +145,12 @@
 5374968200 aDuplicateHistC
 5375587616 aComponentDDcDA
 5374935440 a7lldd
-5375071640 aTierTransition_2
+5374940568 aAuthInt
 5374935448 a5lld
-5375247184 aCrossfireError
+5375196992 aCdata_0
 5375397760 aGarrplotinstan
 5374935456 a4lldk
-5374978800 aRangedmemheapB
+5375077104 aPositionScript
 5376200832 aHttp524
 5374935464 a2lld0lldm
 5375980424 aFmodMasterGrou
@@ -176,13 +177,14 @@
 5375611624 aPeriodcentered
 5378832640 ??_R0?AV?$TSFixedArray@M$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375988064 aValueThatSpeci
+5376138640 aFlacStreamDeco_25
 5375099376 aShadowmode
 5375566888 aMergeErrorWrit
-5374940584 aAlgorithm_0
+5375104424 aRaidgraphicste
 5374968312 aDuplicatePhysC
 5374935552 aResumingTransf
 5376199744 aHttp461
-5375126272 aWowLiveDev
+5375093504 aWowSourceDbDbe_0
 5375328776 aTotemcategory
 5375066640 aLeaveCombatCom
 5378854464 aAvTsfixedarray_96
@@ -215,6 +217,7 @@
 5375230576 aGlmultidrawarr
 5375099505 aMoloddist
 5375017064 aAlpha0255Red02
+5376209568 task_mount_vtable
 5375286472 aTheSyncpointDi
 5374968448 aIncorrectOffsC
 5376189928 aHttpCancelingN
@@ -249,10 +252,10 @@
 5375099608 aLodobjectfades_0
 5376136616 aFmodWasapiFeed
 5375561376 aBattleNetLabsT_23
-5369042384 task_download_empty
+5374940624 a08x08x08x08x
 5375230696 aGlpointparamet_2
 5375227056 aD3d11Interface
-5375987128 aFlangeDepth001
+5375195912 aIdrefs
 5375099632 aParticledensit
 5375998984 aFlanger
 5375126312 aS_9
@@ -284,7 +287,7 @@
 5376142504 aMediaEGLabelSi
 5375230784 aGlisquery
 5376196192 aHttp247
-5375186400 aArSa_0
+5370205664 SMemAlloc
 5375066952 aResetUnkillabl
 5375001424 aInvalidWindowS
 5375997896 aFmodAsfCodec
@@ -294,7 +297,7 @@
 5378873024 aAvTsfixedarray_70
 5376179024 aTotalbytes
 5374935904 aSendFailureS
-5375082640 aDeletedItemAft_0
+5374985328 aGxtexLinearmip_0
 5375099752 aRaidwmoloddist_0
 5375612390 aAdieresis_0
 5378865952 ??_R0?AV?$TSList@UNETSELSOCKPTR@OsNet@@V?$TSGetExplicitLink@UNETSELSOCKPTR@OsNet@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
@@ -318,7 +321,7 @@
 5378830472 ??_R0PEAVCBaseModel@@@8
 5374968728 aInvalidScalAft
 5375001504 aInvalidBlockTy
-5375333872 aItemmodifiedap_0
+5375301104 aSpellvisualeff
 5375427496 aVocaluisounds
 5375099817 aAidlodobjectcu_0
 5375435680 aCharstartoutfi
@@ -344,6 +347,7 @@
 5375998992 aChorus
 5376199760 aHttp462
 5375257424 aWhite
+5369060496 task_creature_dtor
 5374936040 aTo
 5374936048 aSSS
 5375099889 aAidparticleden
@@ -351,7 +355,6 @@
 5374968824 aMalformedWidth
 5375237384 aGlprogramunifo_17
 5374936064 aOperationTooSl
-5374966784 aMissingIhdrBef_1
 5375242840 aGlvertexarrayv_0
 5375186432 aArTn_0
 5375067144 aUnitSBroadcast
@@ -504,10 +507,11 @@
 5376194232 aHttp126
 5375279952 aSoundDriverRep
 5375612484 aIdieresis_0
-5372872096 __security_check_cookie
+5374936480 aTrue
 5375585096 aMaximumSupport
 5375082736 aCrossRealmMail
 5374936488 aFalse
+5376207772 aWrist
 5374936496 aNone
 5375215576 aVendorS
 5376178992 aTier2failed
@@ -593,7 +597,6 @@
 5375174120 aEsa
 5378862016 aAvTslistUbatch
 5374969480 aNoSpaceInChunk
-5374953712 aSslTlsConnecti
 5376212128 aSnapshot
 5375229768 aGlgeterror
 5375231632 aGlgetuniformfv
@@ -601,7 +604,7 @@
 5375099160 aWmapocc
 5376208512 a2Hand
 5374936728 aSecurityDll
-5375065008 aGuardAnAreaNot
+5375231648 aGlgetuniformiv
 5375992376 aIceName
 5375541832 aInvalidBuildCo_0
 5378762848 aSfxReverb_0
@@ -659,7 +662,7 @@
 5375099184 aWadtlodliquid
 5375067944 aUnitSWaitUntil
 5376184512 aRecv1CalledAft
-5375612551 aScaron_0
+5369104176 printfish_140060730
 5375104648 aRaidgraphicsli
 5375568024 aArchivespanSiz
 5375100728 aSsao_0
@@ -739,6 +742,7 @@
 5378831600 ??_R0?AU?$chained_hash_node@U?$pair@$$CBHPEAVCM2SkeletonShared@@@blz@@@blz@@@8
 5372872684 capture_previous_context
 5376200128 aHttp485
+5376187792 aHttpFetchIdDSe_0
 5374937072 aNil
 5378837056 ??_R0PEAU?$chained_hash_node@U?$pair@$$CBHVCComponentTexture@@@blz@@@blz@@@8
 5376186024 aMissingNetwork
@@ -886,6 +890,7 @@
 5375612648 aDollaroldstyle
 5378873936 ??_R0?AV?$TSList@VCMaterialSettings@Liquid@@V?$TSGetExplicitLink@VCMaterialSettings@Liquid@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375166848 aUtf16leunicode_0
+5378836704 aAvTsfixedarray_92
 5376142400 a32x32PixelsFil
 5376199808 aHttp465
 5375232392 aGlvertexattrib_7
@@ -893,11 +898,13 @@
 5375678248 aRawMaxSpace
 5375101328 aUnsupportedSun
 5375231976 aGluniform1fv
+5376185728 aBattleNetLabsD_5
 5375230360 aGlcompressedte
 5374970264 aMtparticles
 5378879056 ??_R0?AUSocketPollEvent@bnl@@@8
 5376181800 aRejectingRetry
 5375565752 aFailedToLoadTh_3
+5376198072 aHttp360
 5375068576 aUnitSPlayMusic
 5374916640 GetWindowRect
 5375678192 aRawDescent
@@ -938,7 +945,7 @@
 5375241304 aGlnamedframebu_5
 5375068696 aResetFloatingF
 5375227616 aUnableToReadVe
-5376182816 aFlushingDBytes_0
+5369104928 printfish_140060A20
 5378878184 ??_R0?AUSend@StandardNetworkImpl@bnl@@@8
 5376181264 aInconsistentDo
 5375115696 aGraphicsqualit
@@ -953,13 +960,13 @@
 5375174152 aEsr
 5375257696 aSizeDD
 5375068744 aObjectSPlayMus
-5375179608 aNl
+5375129416 aEhVectorConstr
 5375229800 aGlgetteximage
 5375363664 aItembonuslistl
 5375101528 aFailedToSetRes
 5375486216 aWmominimaptext_0
 5375561504 aFailedToAccess
-5375068768 aObjectSPlayASo
+5369104992 printfish_140060A60
 5375235856 aGlteximage3dmu
 5376204264 aInvalidUrlForP
 5375986280 aChannel7DelayI
@@ -993,7 +1000,7 @@
 5375678576 aRawUnderlinePo
 5375610608 aEnddirection
 5376137624 aFlacStreamDeco_2
-5375101632 aMsaaSetToDColo
+5369105088 printfish_140060AC0
 5375514400 aZonelightpoint
 5375992504 aIceIcq_0
 5376199856 aHttp468
@@ -1012,7 +1019,7 @@
 5376184544 aRecv2CalledAft
 5376136848 aD3d9Dll
 5378833808 aAvTshashtabler
-5375232752 aGlvertexattrib_22
+5369105136 snvprintf
 5375216712 aOpengl32Dll
 5375235880 aGlgetmultisamp
 5375101688 aMsaaDisabled
@@ -1068,7 +1075,6 @@
 5376142488 aLeafletPage
 5374970776 aLogsModelLog
 5376001240 aFmodVagCodec
-5375103240 aDetailDoodadIn
 5375278912 aHigherSettings
 5378870176 ??_R0?AV?$TSGrowableArray@V?$TSExplicitList@USE3CombinableSoundList@@$0?CCCCCCCD@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375612741 aTwodotenleader
@@ -1099,7 +1105,6 @@
 5375986672 aChannel14Delay
 5375077544 a1IgnoreTargetB
 5374970872 aM2destroyError_0
-5375077056 aNamedPointSear
 5375563792 aEncoderframeCr_0
 5375101952 aSsaoBlurSetToD
 5375980512 aDBuildserverWo_17
@@ -1130,6 +1135,7 @@
 5375279664 aDPcm32
 5374970944 aDiffuseT1T2
 5378840416 aPeauChainedHas_15
+5376210392 aContentTypeIma
 5376194376 aHttp135
 5374970960 aDBuildserverWo_21
 5375126712 aBuilds
@@ -1138,7 +1144,7 @@
 5376194680 aHttp154
 5375099408 aProjtex2dModel
 5375069288 aSetIgnoreComba
-5375237456 aGlprogramunifo_20
+5375212360 aPnct
 5375370664 aChrupgradetier
 5375233136 aGluniformmatri_4
 5375235944 aGlbindfragdata_0
@@ -1266,6 +1272,7 @@
 5374938584 aImageGif
 5375102432 aAlphaMapBitDep
 5374938596 aJpg
+5375258200 aAcceptexFailed
 5375181392 aUzUzCyrl
 5375233512 aGlbeginconditi
 5378830560 aAvTsfixedarray_9
@@ -1304,7 +1311,7 @@
 5375017568 aFilenameConsol
 5375364680 aScreenlocation
 5375086896 aResilienceCrit
-5376185664 aHostip
+5375212376 aPnt2
 5374971472 aCorruptModelSe
 5375563720 aEncoderframe
 5375399864 aMount_0
@@ -1388,7 +1395,7 @@
 5375257192 aPinkFlamingo
 5375233856 aGlvertexattrib_46
 5375613920 aDollarinferior
-5374916688 __imp_VerQueryValueA
+5375212456 aPbnt2
 5375547360 aInvalidVfsRoot_0
 5374938952 aSContentDispos
 5375569184 aErrorReadingPa
@@ -1402,7 +1409,7 @@
 5375083632 aHammerGold1
 5374971752 aCorruptSkinPro
 5378856760 ??_R0?AU?$list_node@UVersionInfoEntry@tact@@@blz@@@8
-5369106288 get_current_time_ptr
+5374938992 aContentTypeS
 5376212952 ??_R4type_info@@6B@
 5375289856 aThisSubsoundIs
 5376001120 aTrack
@@ -1477,7 +1484,7 @@
 5375192752 aPostHeaderHook
 5375544096 aInvalidCdnServ
 5378840400 ??_R0PEAU?$chained_hash_node@U?$pair@QEAVCMapObj@@H@blz@@@blz@@@8
-5375365184 aTransmogholida
+5369073728 task_character_load_scene
 5375372640 aItemchildequip
 5374971976 aDiffuseT1
 5378850480 ??_R0?AV?$TSList@VCRenderCallback@@V?$TSGetExplicitLink@VCRenderCallback@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
@@ -1490,7 +1497,7 @@
 5375280544 aRequestedDHard
 5375397992 aAreatriggersph
 5378854560 aAvTsgrowablear_68
-5375119648 aErrorDownloadi
+5376193320 aHttp39
 5375234160 aGlgetfragdatal
 5378826912 ??_R0?AV?$TSGrowableArray@V?$TSExplicitList@UCVar@@$0?CCCCCCCD@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375100008 aRaiddepthbased_0
@@ -1537,7 +1544,6 @@
 5374939352 aAnnounce
 5378831472 aAvTslistUcm2sk_0
 5378872048 ??_R0?AV?$TSList@VDestroyEmitterMsg@@V?$TSGetLink@VDestroyEmitterMsg@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5375179664 aSk
 5375103200 aDetailDoodadIn_0
 5375505912 aTerrainmateria
 5375556104 aSizeKeyMaxSize
@@ -1558,7 +1564,8 @@
 5375678312 aRawPointSize
 5374939408 aGetParameter
 5374935768 a3lldS3lldS3lld
-5375608480 aEndtrackkern
+5378871576 ??_R0?AVSetEmitterPositionMsg@@@8
+5375212400 aPnct3
 5374939424 aSetParameter
 5378860048 ??_R0PEAU?$chained_hash_node@U?$pair@$$CBIPEAUID3D11SamplerState@@@blz@@@blz@@@8
 5375596592 aPostscriptInfo
@@ -1630,7 +1637,6 @@
 5376179632 aFetchIdDOfDown_2
 5376138824 aFlacStreamDeco_29
 5375208872 aCmaaMiniEdge
-5374975632 aCombinersModAd_0
 5375545272 aBlockencoder_0
 5374939648 aAcceptApplicat
 5375083264 aClassic
@@ -1657,7 +1663,7 @@
 5375560480 aFailedToWriteS
 5375988288 aFmodItEcho
 5375239688 aGlinvalidatebu_0
-5375236192 aGlsamplerparam_4
+5369043040 task_character_base_dtor
 5375103560 aLodobjectminsi
 5376193336 aHttp41
 5375070800 aMoveRelativeTo
@@ -1691,6 +1697,7 @@
 5375234712 aGlgenframebuff
 5375070880 aUnitSAssignKil_0
 5376208544 aMainHandWeapon
+5375987128 aFlangeDepth001
 5376196000 aHttp235
 5370648688 CRASH_7FF784809870
 5375103656 aUnsupportedPhy
@@ -1701,6 +1708,7 @@
 5374915240 SetThreadPriority
 5378755120 aFmodChorus_0
 5378877544 aAublockFreelis
+5375129488 aEhVectorVbaseC
 5374939840 aSessionS
 5375280064 aMicrosoftDropp
 5376612696 aSEazcc
@@ -1762,6 +1770,7 @@
 5376142816 aBandArtistLogo
 5376198800 aHttp404NotFoun
 5375103816 aWorldLoadObjec_0
+5374943392 aRcptToS_0
 5375099704 aProjectedtextu
 5378853520 ??_R0?AV?$TSHashTable@VPVSCell@@UHASHKEY_PVSCELL@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375071064 aTargetPlayerPl
@@ -1777,7 +1786,6 @@
 5375094248 aWowSourceDbWow
 5375234936 aGlblitframebuf
 5375102216 aDisablingBspNo
-5375989908 aNoise_0
 5375242360 aGltextureparam_3
 5375071104 aJumpToAPoint
 5378878200 aAusendStandard
@@ -1806,7 +1814,7 @@
 5375611776 aMacron
 5375562688 aMissingStorage
 5375570352 aForNonFrameDec
-5374974112 aEngineSourceMo_3
+5369043104 task_character_create_scene
 5375988680 aReflections
 5378863344 aAvTsfixedarray_55
 5375993672 aNoAspiManagers
@@ -1822,6 +1830,7 @@
 5375988716 aReverb
 5376208380 aNeck_0
 5374972912 aShadowmonk
+5375212464 aPnc2
 5375170728 aAmericanEnglis_0
 5375988728 aReverbDelay
 5375613097 aFf
@@ -1839,6 +1848,7 @@
 5376187896 aHttpFetchIdDHt
 5376212992 ??_R3type_info@@8
 5376001128 aGenre
+5375365184 aTransmogholida
 5375236272 aGlgetsamplerpa_1
 5374940200 aUnableToReadTh
 5372871952 __GSHandlerCheck
@@ -1869,6 +1879,7 @@
 5375586720 aDefineHuffmanT
 5375001448 aUnknownHeaderF
 5375071352 aUnitSSetAnimat
+5375578376 aFailedToCreate_44
 5375559408 aBattleNetLabsT_58
 5375104128 aGraphicsprojec
 5375988872 aSpeakerMixBl
@@ -1900,6 +1911,7 @@
 5374968696 aMissingIhdrBef_9
 5375235288 aGlgetuniformin
 5374936376 a10234999
+5375212432 aPct4
 5372450016 http_message__get_status
 5375488488 aScenescripttex
 5378834984 aP6axaeburender
@@ -1962,17 +1974,18 @@
 5374940556 aAuth
 5375104400 aGraphicsoutlin
 5375067032 aResetTheSpells
-5374940568 aAuthInt
+5375071640 aTierTransition_2
 5375436120 aArtifactappear_0
 5375115328 aSettingGxapiTo
 5375291000 aTooManyErrorsN
-5375104424 aRaidgraphicste
+5374940584 aAlgorithm_0
 5376194456 aHttp140
 5375296456 aObjecteffectpa
 5375447032 aSpelleffectemi
 5375290952 aFmodErrorErrDS
 5374940600 aMd5Sess_0
 5375226624 aPresentError0x
+5371433856 blz::string::split
 5375989184 aLowpassCutoffF_0
 5378855072 aAvTsgrowablear_25
 5374940612 aMd5
@@ -1984,8 +1997,8 @@
 5375986728 aChannel15Delay
 5374986576 aDiffuseProjTwo
 5376208460 aFinger
-5376185728 aBattleNetLabsD_5
-5374940624 a08x08x08x08x
+5375212440 aPct5
+5369042384 task_download_empty
 5375613976 aAacutesmall
 5375105272 aUsageStaticDyn
 5369042400 get_empty_string
@@ -1993,13 +2006,13 @@
 5374930512 aEngineSourceCu_1
 5375104488 aRaidgraphicspr
 5378845904 aAvTsfixedarray_27
-5375301104 aSpellvisualeff
+5369042416 task_character_scene_name
 5375555056 aUnexpectedVeri
 5375509416 aVirtualattachm_0
 5374940664 aD41d8cd98f00b2
 5375234264 aGluniform2uiv
 5375485224 aChrclasstitle
-5375235584 aGldrawrangeele_0
+5369042432 task_character_base_ctor
 5375584104 aUnsupportedJpe
 5374974208 aM2ModelMatrixP
 5375104520 aRaidgraphicsvi
@@ -2007,7 +2020,7 @@
 5375071760 aSuspendTrigger
 5375571424 aBspatchFailedT_2
 5378867728 aAvTsfixedarray_65
-5374946904 aFailedToParseF
+5374979672 aParticleLitT1
 5374940704 aSS08xSSS
 5375205896 aAntiAliasingMo
 5375017904 aInput
@@ -2133,7 +2146,7 @@
 5375514696 aFootprinttextu
 5375203640 aUsAscii
 5375334240 aCreaturediffic
-5374979728 aParticleUnlit3
+5374946960 aSection
 5375104872 aDetailDoodadIn_1
 5375575800 aPathTooLongOnO
 5378872064 aAvTslistVdestr
@@ -2143,7 +2156,6 @@
 5375556160 aBattleNetLabsT_16
 5375067112 aUnitSSendALoca
 5375432568 aBattlepetnpcte
-5375210272 aFxaa
 5375563648 aBattleNetLabsT_26
 5376209320 aArealightwater
 5374964768 aCanTWriteTrnsW
@@ -2175,7 +2187,7 @@
 5376210848 aNull
 5378867296 ??_R0?AV?$TSList@USE3SoundKitObjectGroup@@V?$TSGetExplicitLink@USE3SoundKitObjectGroup@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375173176 aUnitedKingdom
-5375241888 aGltexturestora
+5375209120 aFfxunderwaterl
 5375104968 a02
 5375256912 aMediumSlateBlu
 5375153536 aLogb
@@ -2252,7 +2264,7 @@
 5375596684 aNotice_0
 5375613292 aPsmall
 5375105168 aReflectionMode
-5375081528 aTradeFailure
+5375989908 aNoise_0
 5375181848 aArMa
 5375334552 aGametips
 5378854656 aAvTshashtableV_11
@@ -2449,6 +2461,7 @@
 5378835032 aPeap6axaeburen
 5374974400 aErrorSModelmat
 5374916784 waveInClose
+5375117552 aWowdownloadLen
 5375243032 aGlgetvertexarr
 5375081504 aPlayerlaunchqu
 5375171216 aEnglishIre
@@ -2459,7 +2472,7 @@
 5375279040 aDoNotChangeThi
 5374983776 aCasyncobject
 5378864464 ??_R0?AV?$TSFixedArray@UTEXTURECACHEROW@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5374985328 aGxtexLinearmip_0
+5369119856 cvar_setfloat
 5375171240 aEnglishJamaica
 5376000048 aMtrk
 5376207592 aShowhelm
@@ -2467,7 +2480,7 @@
 5375597232 aPrivate
 5375013896 aLeguppertextur
 5376203208 aFailedToCreate_10
-5376198072 aHttp360
+5369098880 blz::format_impl
 5375597240 aBlenddesignpos
 5375105724 a128_0
 5376193408 aHttp50
@@ -2498,6 +2511,7 @@
 5375073024 aUnitSChatEmote_4
 5376557176 __IMPORT_DESCRIPTOR_IMM32
 5375181952 aArTn
+5375082640 aDeletedItemAft_0
 5376206504 aLoadingScenesF
 5375584560 aCcir601Samplin
 5375171344 aEnglishTrinida
@@ -2509,7 +2523,9 @@
 5378871448 aAvmarksoundchu
 5378830640 ??_R0?AV?$TSFixedArray@UM2ModelCallback@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375319416 aOverridespelld
+5369053056 j_on_character_download_finish
 5375105824 aMaxlightdist
+5374932064 aProxyConnectio
 5375078192 aStringIdSearch
 5375099008 aWdoodadinst
 5374974760 aFailedToInitia_2
@@ -2518,7 +2534,8 @@
 5376197768 aHttp341
 5378852496 aAvTslistVcterr
 5376187192 aMCanceled
-5375236928 aGlprogramparam
+5376208688 task_item_vtable
+5369371456 json_value_as_object
 5378857952 aAubuildmanifes
 5375678944 aMuleBaselineOf
 5376214144 TlsStart
@@ -2637,7 +2654,6 @@
 5375257232 aPortage
 5375073368 aAbortActionSet_0
 5375608576 aKpy
-5376195192 aHttp186
 5374942304 aCramMd5
 5375538744 aDownloadErrNam
 5375236624 aGlgetshaderpre
@@ -2648,7 +2664,7 @@
 5376210856 aDRequestsActiv
 5374997544 a02x02x02x02x
 5375072832 aUnitSResetsHis
-5375111016 aMapobjdiffuseT_1
+5374979944 aParticle2k
 5375237240 aGlprogramunifo_11
 5375574752 aMArc4offsetOff
 5374942332 aGssapi
@@ -2694,7 +2710,7 @@
 5375238688 aGlscissorindex
 5375580712 aInvalidHeaderS
 5374942456 aGotUnexpectedP
-5375149268 aMarch
+5374952660 aError
 5375106304 aTextureResolut
 5375078272 aAngleDeg
 5374975240 aCorruptModelDa
@@ -2748,7 +2764,7 @@
 5374974528 aM2BoneSeqPool
 5378862336 aAvTsfixedarray_53
 5376193432 aHttp53
-5376187792 aHttpFetchIdDSe_0
+5369077136 task_character_render_generic
 5374979992 aParticle16k
 5378857576 ??_R0PEAUBuildManifestEntry@@@8
 5375106456 a10f
@@ -2821,6 +2837,7 @@
 5375237720 aGlprogramunifo_31
 5374975584 aCombinersModAd
 5375149328 aOctober
+5379866776 aIilIilIil_0
 5376207624 aCustomdisplayo
 5375234336 aGltexparameter_4
 5375106672 aDoodadloddist
@@ -3001,6 +3018,7 @@
 5375172680 aSwedishFinland
 5376182544 aDroppingRetryF
 5375611883 aOe
+5369043280 task_character_do_render
 5374943312 aMailFromSAuthS
 5378831808 aAvTsfixedarray_82
 5375987232 aFmodFlange
@@ -3026,7 +3044,7 @@
 5374976144 aCombinersModDu
 5374930968 aSauthorization_3
 5375238296 aGlvalidateprog_0
-5374943392 aRcptToS_0
+5369110688 console_printf_with_category
 5378875456 ??_R0?AV?$TSHashTable@UObject@Liquid@@VHASHKEY_NONE@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375083888 aOr
 5376188584 aMRequestTypeFe
@@ -3049,7 +3067,7 @@
 5375550784 aFailedToCreate_33
 5375172816 aEngland
 5376002512 aEngineSourceSo_62
-5375179800 aMk
+5376178184 aFetchErrUnknow
 5375564264 aMBlockrawsize0
 5375100280 aRaidgroundeffe_0
 5374976216 aCombinersModMa
@@ -3147,10 +3165,9 @@
 5378872192 aAvTslistVsetem
 5375173056 aSouthKorea
 5375541352 aFailedToCreate_21
-5374936480 aTrue
+5372872096 __security_check_cookie
 5375556248 aKeySizeIsMisma
 5375238600 aGlviewportarra
-5374934304 a15_1
 5375107536 aRaidfarclip
 5375586800 aDefineRestartI
 5378839848 ??_R0?AVLightQE@World@@@8
@@ -3170,6 +3187,7 @@
 5375458048 aAnimkitboneset_0
 5375608624 aStartaxis
 5375107584 aRaidwaterdetai
+5375212544 aPnctId
 5375597312 aBuildchararray
 5374943752 aMatch
 5376191288 aSocketConnecti
@@ -3239,7 +3257,7 @@
 5376209012 a0
 5374976704 aBwDiffuseT1T2
 5375588272 aCorruptJpegDat_1
-5375548192 aInvalidTargetC_0
+5369371424 json_value_as_uint
 5375107784 aRaidgroundeffe
 5375992424 aIceGenre_0
 5376191528 aFailedToCloseC
@@ -3274,6 +3292,7 @@
 5376189204 aMRun
 5375083992 aLevelTooLow_0
 5374944024 aInsufficientWi
+5375573288 aCeDiskFull
 5376207664 aIconcolor
 5375238944 aGldrawtransfor
 5375610968 aScedilla
@@ -3306,20 +3325,21 @@
 5375206240 aTypeOfColorBli
 5375245224 aEngineSourceGx_10
 5376195664 aHttp214
-5375291536 aInitSuppressor
+5375242384 aGltextureparam_4
 5375372952 aRelicslottierr
 5374976872 aDefaultPnt
 5375573720 aInvalidHeaderI
 5378844928 aAvTsfixedarray_84
 5375107952 aRaidHorizonSta
 5375278176 aDOutputDrivers
-5374985704 aRibbon
+5375084008 aLevelTooHigh_0
 5374944120 aSendingDataFai
 5376181480 aDownloadIdDSiz
+5375610819 aGreaterequal
 5375559536 aBattleNetLabsT_21
 5374976896 aDBuildserverWo_2
 5375986168 aChannel5DelayI
-5375564608 aMOffsetMSize
+5375236928 aGlprogramparam
 5375140744 aReadOnlyFileSy
 5375564992 aBattleNetLabsT_29
 5375206288 aEnabled
@@ -3327,7 +3347,7 @@
 5375193240 aFullscreen
 5375173528 aEnc_0
 5376193192 aHttp23
-5374944160 a127255s
+5375140768 aTooManyLinks
 5376178208 aFetchOk
 5374985712 aLightningt1T2T
 5375206312 aFfxAntiAliasin_1
@@ -3351,7 +3371,7 @@
 5375257296 aFadedSafetyOra
 5375608640 aStartcharmetri
 5376209060 aD
-5374976992 aEngineSourceOb
+5374944224 aSyntaxErrorInT
 5374974800 aM2skeletonCall
 5375140840 aResourceDeadlo
 5376192688 aRequestFamilyN
@@ -3392,7 +3412,7 @@
 5375562816 aFailedAttemptT_0
 5375597408 aRegular
 5374944328 aCSCS
-5374915776 SystemTimeToTzSpecificLocalTime
+5374981392 aPhysdrawbroadp
 5375108176 aWorldpreloadso
 5378864576 aAvTsfixedarray_61
 5374944340 aCC_0
@@ -3440,6 +3460,7 @@
 5375173832 aIts
 5375613814 aThreeinferior
 5378879856 ??_R0?AU?$rb_node@U?$pair@$$CBHV?$basic_string@DU?$char_traits@D@blz@@V?$allocator@D@2@@blz@@@blz@@@blz@@@8
+5375212568 aPnct3Id
 5375105912 aBlurTechnique0
 5374944472 aWsacloseevent
 5375243120 aGlcreatesample
@@ -3539,6 +3560,7 @@
 5375279136 aNoticeDspbuffe
 5375149648 aApr_1
 5374977512 aCom2
+5375247184 aCrossfireError
 5375991120 aLfoOnTime0To1D
 5374977520 aCom3
 5375130224 aBaseClassDescr
@@ -3573,7 +3595,7 @@
 5378858144 ??_R0?AV?$TSFixedArray@VC2Vector@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5376196688 aHttp278
 5374977584 aLpt2
-5374931208 aHost
+5375062280 aNoGeosetShowHe
 5375174200 aEsv
 5375548648 aFallback
 5378845280 ??_R0?AV?$TSFixedArray@PEAVMapStaticEntity@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
@@ -3640,7 +3662,7 @@
 5375548344 aInvalidTargetE
 5375108848 aWowSourceWorld_7
 5376193512 aHttp63
-5374947624 aFtp_2
+5374914856 QueryPerformanceCounter
 5375174392 aGbr_1
 5374949624 aQuotStringNotA
 5376148776 aCodesD
@@ -3681,6 +3703,7 @@
 5376178240 aFetchErrReject
 5375149712 aDec_2
 5375174504 aPri
+5375581392 aFcloseFailedAf
 5378827504 aAvTsgrowablear_0
 5374945136 aInvalidTsizeSV
 5376560136 aWs232Dll_0
@@ -3690,7 +3713,7 @@
 5375316248 aUitextureatlas
 5378838416 aAudbc2commonva
 5376190336 aU03ums
-5375078720 aOn1Off0
+5374914880 GetTickCount
 5375174536 aZaf
 5376200064 aHttp481
 5375567760 aUnknownDownloa
@@ -3706,12 +3729,12 @@
 5378860240 ??_R0?AU?$chained_hash_node@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@blz@@V?$allocator@D@2@@blz@@UGxShaderD3d11@@@blz@@@blz@@@8
 5375243144 aGlcreateprogra_0
 5375109040 aWorldscene
-5375193416 aDncloudsReflec
+5374931272 aInvalidTimeval
 5374945208 aSCSC
 5375566840 aMergeErrorRead
 5374977984 aGenuineintel
 5376001480 aFmodNosoundOut
-5375231648 aGlgetuniformiv
+5375608480 aEndtrackkern
 5374945224 aEngineSourceCu_28
 5378764976 aIil_1
 5376182608 aDownloadDIncom
@@ -3750,13 +3773,12 @@
 5375076416 aUnitSSetDonTLe
 5376200608 aHttp510
 5378842784 aAvTsfixedarray_17
-5375209824 aFfxSketchEdges
+5374964064 aZlibFailedToIn_1
 5374978120 aFeatures08x
 5376193200 aHttp24
 5375989160 aFmodLowpass
 5375149312 aSeptember
 5375109200 aPrepassscreen
-5375179864 aSw
 5375067832 aUnitSUnsheathe
 5374945368 aTftpTxInternal
 5374934360 aFtp_0
@@ -3775,6 +3797,7 @@
 5375257336 aFadedScreaminG
 5376194728 aHttp157
 5374978192 aStandardD1b08x
+5375212600 aPnc2tTsId
 5374991384 aOverwroteFreed_0
 5375109272 aRenderTerrainT
 5376179944 aNoHostAvailabl
@@ -3888,6 +3911,7 @@
 5376193536 aHttp66
 5375226272 aD3d11createdev
 5375076808 aV80ResetDonTDi
+5375998328 aIns
 5375998224 aDlid
 5374978512 aEngineSourceOs_4
 5375582392 aShlwapiDll
@@ -3980,7 +4004,7 @@
 5378867904 aAvTsfixedarray_64
 5375998232 aColh
 5376199000 aHttp416Request
-5374978752 aGetdpiformonit
+5372488384 WSAGetLastError_0
 5375577056 aBlockMDecoder
 5375133472 aMinkernelCrtsU
 5376204456 aMultibytetowid_0
@@ -3994,14 +4018,14 @@
 5374915024 GetCurrentDirectoryW
 5376195728 aHttp218
 5375208168 aEngineSourceFf_5
-5375077104 aPositionScript
+5374978800 aRangedmemheapB
 5376184912 aFailedToAccept
 5375613600 aQuestiondownsm
 5375231784 aGlisshader
 5375372024 aDungeonmap
 5375279280 aSettingDspBuff
 5375077120 aSpeedMultiplie
-5378874496 ??_R0?AUDisplMapPerturbationMesh@Liquid@@@8
+5375581312 aFailedToRename_2
 5376212096 aMinimap
 5375240968 aGlgetnamedbuff
 5376210008 aShowmapobjs
@@ -4032,7 +4056,7 @@
 5375558512 aBattleNetLabsT_57
 5374978912 aTriedToDestroy
 5375985144 aFmodCeltCodec
-5369093264 generic_render_wmo
+5375155344 aApppolicygetth
 5375077224 aMinTimeAtEndsS
 5374916928 waveOutGetDevCapsA
 5375243176 aGlcreatequerie
@@ -4119,7 +4143,7 @@
 5375232272 aGlvertexattrib_2
 5369375824 xml_get_attr_by_name
 5375175764 a1Inf
-5376185920 aNameResolution
+5375212632 aPnc2t3Id
 5375073464 aForceCombatWit
 5375077464 a1ToAbortAction
 5375538880 aECancel
@@ -4130,6 +4154,7 @@
 5375443952 aUicamera
 5375175780 a1Snan
 5374915088 FlushFileBuffers
+5378858384 aAvTsfixedarray_50
 5374997680 aStartup
 5376196832 aHttp287
 5375175788 a1Ind
@@ -4175,6 +4200,7 @@
 5375368400 aCharacterloado_0
 5376187016 aHttpFetchIdDSe_1
 5375077608 aMountCreature
+5379677600 cvar_hdPlayerModels
 5378861376 aPeai
 5375110384 aTerrainlightma_3
 5375614162 aIdieresissmall
@@ -4237,11 +4263,11 @@
 5375077776 aStringidSlot0O
 5376184480 aAccept2CalledA
 5375577080 aElementMBlockM
-5374953368 aSchannelNextIn
+5375084440 aBadFaction
 5375331576 aPositionerstat
 5378833072 ??_R0?AUPhysCharRecord@Physics@@@8
 5378853744 aAvTslistVpvsce
-5375569312 aTruncatedEntry
+5369048480 task_character_dtor
 5376209936 aFfxenabled
 5374946724 aLogout
 5374942448 aQuit_0
@@ -4312,7 +4338,7 @@
 5375077972 aPoints
 5376202304 aPLineLinelengt
 5375231928 aGluniform2i
-5374979672 aParticleLitT1
+5374946904 aFailedToParseF
 5375555264 aRawblockoffset
 5375077984 aRideSpell
 5376138512 aFlacStreamDeco_22
@@ -4328,7 +4354,7 @@
 5374946944 aUidvalidity
 5375117248 aWowdownloadBad
 5375241864 aGltexturebuffe_0
-5374946960 aSection
+5374979728 aParticleUnlit3
 5375984080 aVolumeOf1stCho
 5375236656 aGldepthrangef
 5375991064 aTimeSkewingOfL
@@ -4336,7 +4362,7 @@
 5374946968 aFailureSending_0
 5374915864 GetCommandLineA
 5376190304 aUmU03us
-5375209120 aFfxunderwaterl
+5369048736 task_character_download
 5375240224 aGlvertexattrib_77
 5376193136 aHttp16
 5376195760 aHttp220
@@ -4404,7 +4430,7 @@
 5374969336 aTruncatedZtxtC
 5376193584 aHttp72
 5375062672 aNoGeosetDefaul_2
-5374979944 aParticle2k
+5375111016 aMapobjdiffuseT_1
 5378837680 ??_R0?AU?$chained_hash_node@U?$pair@$$CBHPEAUPendingPatch@WowClientDB2_Base@@@blz@@@blz@@@8
 5375209328 aFfxdeath
 5374969832 aIgnoringBadAda
@@ -4413,6 +4439,7 @@
 5376208488 aShield
 5378878856 aAuListNodeUnet_0
 5375209344 aFfxdeathSphere
+5374985704 aRibbon
 5376209952 aShowdetaildood
 5375581504 aWriteFailedUpd
 5375017200 aNumberNumberOf
@@ -4464,6 +4491,7 @@
 5378827184 ??_R0?AV?$TSList@UCONSOLECOMMAND@@V?$TSGetExplicitLink@UCONSOLECOMMAND@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5374914560 CryptAcquireContextW
 5374986240 aGpustripVb
+5378874496 ??_R0?AUDisplMapPerturbationMesh@Liquid@@@8
 5375111176 aMapobjtwolayer
 5375081728 aDeleteZeroCoun
 5375207208 aEngineSourceFf
@@ -4475,6 +4503,7 @@
 5374916968 gethostname
 5375111200 aMapobjtwolayer_0
 5375614298 aUacutesmall
+5375544368 aCdnPath
 5374915248 GetThreadPriority
 5374914600 CryptDestroyHash
 5376196864 aHttp289
@@ -4503,6 +4532,7 @@
 5375078504 aNoDamageBelowT
 5376179408 aFetchIdDOfDown_0
 5375614310 aUcircumflexsma
+5369090336 hook_wmo_onquery
 5375209584 aFfxglowwave
 5375236672 aGlcleardepthf
 5375237480 aGlprogramunifo_21
@@ -4519,13 +4549,13 @@
 5376195776 aHttp221
 5375247584 aUnableToGetThe
 5378860144 ??_R0PEAU?$chained_hash_node@U?$pair@$$CB_KPEAUID3D11InputLayout@@@blz@@@blz@@@8
-5375242384 aGltextureparam_4
+5369049232 on_character_download_finish
 5376000464 aPlaylist_0
 5378830448 aPeavcm2model2
 5376201232 aHttp549
 5371480088 strcmp
 5375504000 aModelanimcloak
-5375111320 aMapobjtwolayer_2
+5375209624 aFfxglowfade
 5376200960 aHttp532
 5374932248 aInternalHttpPo
 5374914720 __imp_ImmNotifyIME
@@ -4545,8 +4575,10 @@
 5376178320 aFetchErrNotFou
 5374914760 TerminateThread
 5375405800 aSpellprocsperm_0
+5371387168 task_character_item_set_values
 5378877776 ??_R0?AU?$rb_node@U?$pair@$$CBW4DataKey@bnl@@V?$basic_string@DU?$char_traits@D@blz@@V?$allocator@D@2@@blz@@@blz@@@blz@@@8
 5375078608 a1ToIgnoreFacti
+5375235584 aGldrawrangeele_0
 5375570132 aMImpl
 5374976176 aCombinersOpaqu_14
 5375073656 aResetNoMeleeAp
@@ -4579,7 +4611,7 @@
 5374947620 aTls
 5374953520 aSchannelFailed_2
 5375279232 aUsingDefaultDs
-5374914856 QueryPerformanceCounter
+5374947624 aFtp_2
 5375614342 aYacutesmall
 5374947628 aFtps
 5379866808 aUoxAIil_0
@@ -4589,7 +4621,7 @@
 5375290144 aTheSubsoundSMo
 5375566200 aStaticarchivei_0
 5375591296 aSfntTable
-5374914880 GetTickCount
+5375078720 aOn1Off0
 5376193600 aHttp74
 5374964448 aEmbeddedProfil_0
 5374914888 __imp_GetLastError
@@ -4601,7 +4633,7 @@
 5375231224 aGlbindattriblo
 5375256320 aBrightGreen
 5374947680 aErrorAcceptIng
-5376138640 aFlacStreamDeco_25
+5369060752 task_creatureDisplayInfo_dtor
 5374914920 GetProcAddress
 5378859232 aAvTsgrowablear_27
 5374915888 GetTimeFormatW
@@ -4623,7 +4655,7 @@
 5376191664 aBattleNetLabsD_19
 5376142320 aPadding
 5376197144 aHttp304NotModi
-5374948080 aFailureSending_1
+5374915312 __imp_Process32FirstW
 5375545472 aInvalidWindows
 5375078824 aStringidSlot0O_0
 5375612031 aDegree
@@ -4736,12 +4768,13 @@
 5378877792 aAuRbNodeUPairC_10
 5376199328 aHttp435
 5374948016 aSDSHu
+5378848352 aAvTsfixedarray_36
 5375172040 aSpanishChile
 5375210168 aPassthroughPct
 5374948032 aFailureSending_2
 5375567304 aInvalidHandler
 5375993936 aCallCameToAspi
-5374915360 LoadLibraryA
+5374931744 aAccept_0
 5374915272 GetModuleHandleW
 5375572760 aOpenFailDForSX
 5376197120 aHttp303SeeOthe
@@ -4773,7 +4806,7 @@
 5380493744 request_counter
 5375189776 aKind
 5375591312 aTtCmaps
-5374948128 aPretS
+5375210272 aFxaa
 5378866688 ??_R0?AV?$TSList@UFONTHASHOBJ@@V?$TSGetExplicitLink@UFONTHASHOBJ@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5376193616 aHttp76
 5375243056 aGlgetvertexarr_0
@@ -4791,6 +4824,7 @@
 5375256336 aFadedBrightGre
 5374966360 aIncorrectIendC
 5374915392 GetPriorityClass
+5375211600 aShadersSSSSBls
 5375073760 aSetCannotTurnF
 5376186672 aConnMConnNullp
 5375079240 aActionsetid
@@ -4861,7 +4895,7 @@
 5376196896 aHttp291
 5374915568 HeapFree
 5376198824 aHttp405
-5374948344 aDDDDDD
+5374915576 GetProcessHeap
 5374958464 aDBuildserverWo_1
 5375112192 aParticulateOcc_0
 5375335936 aAreafarclipove
@@ -4928,7 +4962,7 @@
 5375210660 aGll
 5374948208 aFailedToReadDa
 5375095952 aWowSourceDbDbe_1
-5375079592 aFlying
+5375210664 aMtl
 5375346912 aSpellcategory
 5375547680 aFailedToParseK
 5375079600 aSmartStart
@@ -4938,7 +4972,7 @@
 5374948536 aFailedToDoPort
 5375210684 aVertex
 5375232344 aGlvertexattrib_5
-5370229952 storm_setopt
+5374915776 SystemTimeToTzSpecificLocalTime
 5375608784 aStarttrackkern
 5375210692 aHull
 5375257256 aRed_0
@@ -5000,7 +5034,6 @@
 5378833312 aAuphysicsbone
 5375106616 aEntityloddist
 5375014232 aCcharactercomp
-5375113416 aWowSourceWorld_17
 5375238896 aGldrawelements_4
 5378836352 ??_R0?AV?$TSList@USThreadTrack@@V?$TSGetLink@USThreadTrack@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5374915936 HeapReAlloc
@@ -5016,17 +5049,17 @@
 5374981504 aTogglesPhysics
 5374934472 aNoProxy
 5375210884 a410
-5375014280 aCompiaentry
+5374915976 GetOEMCP
 5375210892 a11_1
 5375210896 aAbgr8888
 5378863632 aAvTsfixedarray_57
 5374915480 ResetEvent
-5375014296 aCompsmentry
+5374915992 FindFirstFileExW
 5375210912 aArgb8888
 5375226896 aErrorSelectedM
 5375327280 aItemmodifiedap
-5375117552 aWowdownloadLen
-5374916008 FreeEnvironmentStringsW
+5369121008 register_console
+5375014312 aPreloadplayerm
 5372884240 VerQueryValueA
 5374931868 aRange
 5375210928 aArgb4444
@@ -5039,7 +5072,7 @@
 5376205880 aWeapons
 5375574136 aVersionMismatc
 5375210400 aFfxcmaaedgecom
-5374916040 HeapSize
+5374948808 aRetrS
 5375210956 aRgb565
 5374916048 GetDriveTypeA
 5376198024 aHttp357
@@ -5062,7 +5095,7 @@
 5375013800 aArmuppertextur
 5374916088 CreateWaitableTimerA
 5376210040 aShowsky
-5375998328 aIns
+5374949752 aEngineSourceCu_47
 5375112704 aSSDDLodAdt
 5375084800 aMagic
 5374916104 GlobalAlloc
@@ -5075,7 +5108,6 @@
 5375216232 aD3d12serialize_0
 5375211624 aErrorProcessin
 5375079960 aUpdateUnitLeve
-5374915928 GetUserDefaultLCID
 5374948896 aRetrResponse03
 5375468040 aGarrfollowerqu
 5374948272 aIllegalPortNum
@@ -5110,7 +5142,7 @@
 5375985256 aDistortionValu
 5375117584 aWowdownloadPre
 5374979216 aEngineSourceOs_6
-5375211112 aAbgr32323232f
+5375014504 aCharacterarmor
 5376178368 aFetchErrServer
 5374916208 __imp_Sleep
 5375286888 aTheMusicCallba
@@ -5136,7 +5168,7 @@
 5376128676 aSmpl
 5375172208 aSpanishEcuador
 5375014568 aCharactersecon
-5375211184 aIndex
+5374916272 __imp_acmStreamOpen
 5375281264 aControlPanelSp
 5375013832 aHandtexture
 5374916280 __imp_acmFormatSuggest
@@ -5149,6 +5181,7 @@
 5376193632 aHttp78
 5380823312 aI9uBI9uB
 5375112908 aFront
+5375981968 aEngineSourceSo_13
 5374916304 GetRawInputDeviceList
 5375237752 aGlprogramunifo_32
 5378832000 aAvTsgrowablear_4
@@ -5177,7 +5210,7 @@
 5374916376 GetClientRect
 5375097064 aValueOutOfRang
 5375548792 aDownloadutil
-5374916384 SendInput
+5374949152 aFailedToClearT
 5375989840 aFmodOscillator
 5375101232 aReflectionDown_0
 5374916392 GetAsyncKeyState
@@ -5204,7 +5237,7 @@
 5375230184 aGldeletetextur
 5375556432 aNoInputBufferF
 5375080288 aDungeonLvlUp2
-5369119856 cvar_setfloat
+5374975632 aCombinersModAd_0
 5374916456 GetActiveWindow
 5374914848 CreateSemaphoreA
 5374916464 CharLowerA
@@ -5240,10 +5273,11 @@
 5378857104 aPeauPsvfieldba
 5374916552 EnumDisplayMonitors
 5375014144 aComponentemiss
+5375114528 aDBuildserverWo_10
 5374949328 aFailedToMkdDir
 5376210248 aIrrotatedeltar
 5375539156 aEEnd
-5374915576 GetProcessHeap
+5374948344 aDDDDDD
 5375568504 aClientpatchman
 5375014872 aTexturesGuilde_21
 5375998344 aInsh
@@ -5257,7 +5291,6 @@
 5374916600 LogicalToPhysicalPoint
 5375588080 aInconsistentPr
 5378834192 ??_R0?AV?$TSFixedArray@PEAVCTexture@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5374966136 aInvalidPlteAft
 5374916608 ClientToScreen
 5375317480 aJournalsection
 5374915584 GetLocalTime
@@ -5269,6 +5302,7 @@
 5375166808 aUtf16leunicode
 5374916632 CharLowerBuffA
 5375113248 aWowSourceWorld_16
+5369061040 task_item_scene_name
 5374916648 GetFocus
 5376212208 task_wmo_vtable
 5374916656 EnumDisplayDevicesA
@@ -5326,7 +5360,7 @@
 5378826560 aAvTshashtableU
 5375215800 aUnableToLoadli
 5375080624 aChallengeModeJ
-5375083984 aValid_0
+5376195192 aHttp186
 5376207848 aTrinket2
 5375277236 a045
 5375611000 aCcaron
@@ -5335,7 +5369,7 @@
 5374982336 aSquaredDistanc
 5375095840 aIx16
 5376193664 aHttp82
-5375211720 aEngineSourceGx_0
+5375080648 aWorldQuest7
 5375614274 aOslashsmall
 5375546624 aPatchConfig
 5375604940 aT1cid
@@ -5405,12 +5439,13 @@
 5374949740 aGopher
 5375081808 aDeletedMailWit
 5374916976 __imp_htonl
+5379677648 aHttpUsPatchBat_0
 5375608824 aW0
 5374959336 aWb
 5375062168 aFire
 5375080824 aPvpUnranked3
 5376200352 aHttp499
-5375015296 aTexturesGuilde_27
+5374916992 __imp_select
 5376191488 aShuttingDownCo
 5375095872 aPiss
 5375080840 aPvpUnranked4
@@ -5465,6 +5500,7 @@
 5374968336 aIncorrectPhysC
 5375018528 aMountxdisplay
 5374948440 aCanTResolvePro
+5375118256 aNotImplemented
 5374982680 aPhysicsFailedT_0
 5375570640 aMTypeDecNone
 5378876520 ??_R0PEBVPackedKeyMappingUpdate@tact@@@8
@@ -5481,7 +5517,7 @@
 5374982720 aEngineSourcePh_6
 5375542272 aEncoding
 5378838576 aP6axw4db2table
-5374932064 aProxyConnectio
+5374915680 __imp_Module32First
 5375113800 aBarrierRender
 5375572824 aCceNoIndex
 5378844032 ??_R0PEAU?$chained_hash_node@U?$pair@QEBVCMapObjInst@@PEAVCParticulateVolume@@@blz@@@blz@@@8
@@ -5550,11 +5586,13 @@
 5375068624 aSetTheLootForA
 5375113960 aPrepassterrain_1
 5375179504 aDa
+5375333872 aItemmodifiedap_0
 5375989984 aOctaveRangeAro
 5375188776 aZhMo_0
 5375015672 aTexturesGuilde_6
 5375113464 aObj0Adt
 5375213848 aArgb2101010
+5379677624 cvar_gxApi
 5375081216 aPlayerDestroye
 5375605508 aPfr
 5375014016 aM_0
@@ -5577,10 +5615,10 @@
 5375014024 aU_1
 5375179576 aIs
 5375677792 aCopyright_0
-5371444032 http_message__set_status
+5375179584 aIt_0
 5375101464 aFailedToSetRen
 5375085024 aRemovedFromQue
-5375212360 aPnct
+5375179592 aJa
 5374981440 aPhysdrawtransp
 5375014028 aMale
 5375114064 aMaparealodNocu
@@ -5588,7 +5626,7 @@
 5378829856 ??_R0?AV?$TSList@UCM2SequenceLoad@@V?$TSGetLink@UCM2SequenceLoad@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375090488 aDede
 5376189616 aHttpSchedulerN
-5375212376 aPnt2
+5375179608 aNl
 5375539008 aENotFound
 5378835312 ??_R0?AV?$TSFixedArray@V?$TSExplicitList@VCShaderEffect@@$0?CCCCCCCD@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375179616 aNo_0
@@ -5598,18 +5636,19 @@
 5375081320 aAuctionItemSuc
 5376196960 aHttp295
 5375179632 aPt
+5375232608 aGlvertexattrib_16
 5374978168 aVendorIdString
-5375212408 aPc
+5375179640 aRo
 5375212412 aPct
 5375210644 aD3d11
 5375081344 aPurgeBuyback
 5374983624 aDiskQueue
 5375109104 aTexturesWaterp
 5375582016 aBattleNetLabsT_53
-5375212424 aPct3
+5375179656 aHr
 5375987464 aFmodHighpass
 5375992248 aIcyAim
-5375212432 aPct4
+5375114128 aWaterRipples
 5375566288 aFailedToLoadGr
 5378862592 ??_R0?AV?$TSList@UFACEDATA@@V?$TSGetExplicitLink@UFACEDATA@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375128728 aBased
@@ -5629,7 +5668,6 @@
 5375090504 aZhtw
 5375179704 aUr
 5375613208 aDsmall
-5374915976 GetOEMCP
 5375179712 aId_1
 5374915744 __imp_RtlUnwindEx
 5378839680 aAvTsgrowablear_16
@@ -5650,28 +5688,28 @@
 5375998948 aImpm
 5375584840 aWriteToEmsFail
 5375139664 aExe_0
-5375212520 aPt2Idd
+5375179752 aLt
 5375063280 aAnimationTier
 5375998956 aPnam
 5375179760 aFa
 5378861504 ??_R0_K@8
 5375998964 aCnam
 5375118928 aRequestEntityT
-5375210664 aMtl
+5375079592 aFlying
 5375179768 aVi
 5374950396 aHome
 5375074192 aUnitSPerformSp_1
 5375179776 aHy
 5374950404 aNetrc
 5375478272 aSpecialization
-5375212552 aPnct2Id
+5375179784 aAz
 5376178416 aFetchErrNetwor
 5374950412 SubBlock
 5375015952 aTexturesGuilde_11
 5374934528 aAllProxy
 5375090520 aEsmx
 5375613411 aExclamdownsmal
-5375212568 aPnct3Id
+5375114264 aWowSourceWorld_18
 5378833136 aPeavkinematicg
 5375065464 aEmoteStateSetA
 5375179808 aAf
@@ -5699,7 +5737,7 @@
 5375243320 aGlmemorybarrie_0
 5374915768 GetDriveTypeW
 5375544472 aKeyservice
-5375212632 aPnc2t3Id
+5375179864 aSw
 5378865872 aAvTsfixedarray_86
 5375179872 aUz
 5375212644 aIdx
@@ -5738,7 +5776,7 @@
 5375096008 aWowSourceWorld
 5375179960 aKok
 5375179968 aSyr
-5376199200 aHttp427
+5376182816 aFlushingDBytes_0
 5375179976 aDiv
 5378864304 aAvTslistUkernn
 5378875696 ??_R0?AV?$TSFixedArray@V?$TSExplicitList@UObject@Liquid@@$0?CCCCCCCD@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
@@ -5841,6 +5879,7 @@
 5376184944 aFailedToReceiv_5
 5375573432 aKeySize5
 5378850608 ??_R0?AV?$TSFixedArray@UGxVertexPNCT2@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
+5374932360 aFailedSendingP
 5375180224 aPlPl
 5374975904 aCombinersOpaqu_9
 5375081928 aScriptDestroyi
@@ -5865,6 +5904,7 @@
 5375578280 aFirsttobind
 5375188904 aUlongMax
 5375081984 aIdrPostInitHac
+5369050080 task_character_parse_appearance
 5375542304 aInstall
 5375566496 aOffsetBytesSiz_0
 5374915840 ExitThread
@@ -5877,7 +5917,7 @@
 5375082008 aIdrDebugDestro
 5375578312 aHostingheaderP
 5375678696 aSmallCapSize
-5374931272 aInvalidTimeval
+5374981464 aPhysdrawstats
 5375182232 aEnTt
 5375180320 aSqAl
 5375016352 aWowCommonCompo_0
@@ -5890,7 +5930,7 @@
 5374947640 aEngineSourceCu_30
 5375090612 aIt
 5375180352 aThTh
-5375232608 aGlvertexattrib_16
+5375068768 aObjectSPlayASo
 5375082056 aIdrDbaCorrecti
 5375128768 aStdcall
 5375404824 aAchievement
@@ -5904,7 +5944,7 @@
 5376188256 aHttpProtocolEr
 5375180384 aUrPk
 5375541216 aFailedToCreate_4
-5374981392 aPhysdrawbroadp
+5375210768 aGl32
 5376201312 aHttp554
 5375344232 aItembagfamily
 5375371000 aGarrmissionxen
@@ -5942,7 +5982,6 @@
 5375113496 aTex1Adt
 5375999676 aF10_0
 5375180480 aLvLv
-5375081384 aSoldToNpcT
 5375999684 aG10
 5374965024 aZeroLengthKeyw_0
 5376205984 aLights
@@ -6012,10 +6051,11 @@
 5375231344 aGldisableverte
 5375016816 aFontcolor
 5375188968 aLonglongMin
-5375086224 aWrongArea
+5375111320 aMapobjtwolayer_2
 5375180664 aAfZa
 5375437568 aRewardpack
-5375016832 aBgcolor
+5371444032 http_message__set_status
+5374984064 aDBuildserverWo_5
 5375999876 aLyric
 5375210816 aPs
 5375016840 aHighlightcolor
@@ -6078,7 +6118,7 @@
 5375016968 aCloseconsole
 5376211184 aWowMount
 5375606800 aSfnts_0
-5374981464 aPhysdrawstats
+5374915928 GetUserDefaultLCID
 5375393928 aItemcurrencyco
 5374951448 aSocks5ReadTime
 5375016992 aAppendlogtofil
@@ -6116,7 +6156,7 @@
 5375213688 aStreamIdx
 5374951552 aReceivedInvali
 5375377540 aPhase_0
-5375232704 aGlvertexattrib_20
+5375101632 aMsaaSetToDColo
 5375115400 aGxapiSetPendin
 5375328464 aGarrmechanicty
 5375453944 aCriteria
@@ -6127,7 +6167,6 @@
 5375238168 aGlprogramunifo_45
 5375213720 aLogopen
 5375017120 a1050ArbitraryF
-5376178184 aFetchErrUnknow
 5375148196 aIilIilIil
 5375210864 aMtlcs
 5375213736 aVendorIdX
@@ -6158,7 +6197,6 @@
 5374954192 aSelectPollErro
 5374951656 aFailedToSendSo_0
 5375678720 aStrikeoutAscen
-5374931296 aS02dS4d02d02d0
 5375181040 aGlEs
 5375282640 aFailureRequest
 5375483944 aSpellinterrupt
@@ -6188,7 +6226,7 @@
 5378857184 aPeauPsvfieldba_1
 5375279404 a51
 5375115568 aUnableToInitia_0
-5374965128 aTrailingSpaces
+5375014280 aCompiaentry
 5374984504 aCtextureatlasR
 5376193736 aHttp91
 5375596888 aBluefuzz
@@ -6205,6 +6243,7 @@
 5375238200 aGlprogramunifo_46
 5376190624 aNetErrNotImple
 5375115608 aUnableToCreate
+5375211720 aEngineSourceGx_0
 5375287008 aMusicSystemIsN
 5376197736 aHttp339
 5375181152 aArIq
@@ -6227,12 +6266,13 @@
 5375992040 aIcyPub_0
 5375181200 aEsMx
 5378861552 aAvTslistUgxust_0
-5374915992 FindFirstFileExW
+5375014296 aCompsmentry
 5376000408 aOggs
 5375570704 aInputsize0
 5375997336 aExpiry
 5375017376 aFloatSpecifies_0
 5376198104 aHttp362
+5375232752 aGlvertexattrib_22
 5375486632 aWmominimaptext
 5376000424 aFmodPlaylistRe
 5375181232 aItCh
@@ -6258,7 +6298,7 @@
 5378760080 aFmodHighpass_0
 5374984688 aBlpTextureFail_0
 5374949800 aFailedSendingG
-5375014312 aPreloadplayerm
+5374916008 FreeEnvironmentStringsW
 5375017464 aResetsAllTheFo
 5376210920 aWowSourceRende
 5375083008 aTokenReconcile
@@ -6324,7 +6364,7 @@
 5375988616 aDryLevel
 5375247024 aAdlAdapterAdap
 5376000692 aLogo
-5375063496 aOptions_0
+5374916040 HeapSize
 5378863744 aAvTsfixedarray_56
 5375115960 aTerraintexture_0
 5376194840 aHttp164
@@ -6497,6 +6537,7 @@
 5378836480 ??_R0?AV?$TSList@USThreadAtExitCallback@@V?$TSGetLink@USThreadAtExitCallback@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5374916112 GlobalUnlock
 5375247464 aAdapterICurren
+5379589360 dest
 5375585056 aMissingHuffman
 5375545632 aArc4
 5375181936 aSmaNo
@@ -6533,7 +6574,7 @@
 5376001228 aRating
 5378876320 ??_R0?AV?$intrusive_ptr@VDownloadReceiver@detail@tact@@@blz@@@8
 5376197040 aHttp300Multipl
-5374952660 aError
+5375149268 aMarch
 5375559088 aIsTheLeadingPa
 5375182040 aArOm
 5376177400 aFileio
@@ -6543,6 +6584,7 @@
 5375555456 aFailedToRewind
 5375116512 aPostGetOptions
 5375018212 aTtf
+5376207952 task_character_vtable
 5375189200 aLevelInfo
 5374952680 aUnknownErrorDX
 5376634584 aUuu
@@ -6614,12 +6656,14 @@
 5374948928 aAcctS
 5374985608 aRefc
 5376138424 aFlacStreamDeco_20
+5369055600 sn1024printf
 5375608408 aCharsetRegistr
 5374952848 aMicrosoftUnifi
 5375083924 aSmall
 5375232920 aGlvertexattrib_29
 5375227032 aChoosingAdapte
 5374985624 aBpp
+5375352512 aQuestxgroupact
 5375553280 aOffset0
 5375149472 aFri
 5376180680 aShutdownFetche
@@ -6642,7 +6686,7 @@
 5376185176 aFlagged
 5376177408 aBnlRenameFaile
 5375083980 a5
-5374916200 GlobalLock
+5375083984 aValid_0
 5375242664 aGlgettexturepa_2
 5375205624 aCdata_3
 5375182296 aEsEc
@@ -6654,7 +6698,6 @@
 5375998376 aArt1
 5376199232 aHttp429
 5374954408 a0123456789abcd_5
-5376198488 aHttp386
 5375149560 aThursday_0
 5371414016 register_hook_post
 5375457264 aScenarioevente
@@ -6694,7 +6737,7 @@
 5375149680 aAug_1
 5375520936 aLiquidBackBuff
 5376205472 aShmemDiskFull
-5375014504 aCharacterarmor
+5374916200 GlobalLock
 5378838680 ??_R0H@8
 5375182456 aEsSv
 5376194872 aHttp166
@@ -6702,7 +6745,7 @@
 5375572928 aCceCreateFaile
 5378844136 ??_R0PEAH@8
 5375608452 a10646
-5375216576 aWglgetpixelfor
+5369056192 task_character_post_dtor
 5375084168 aBadQuestLog
 5375608460 a8859
 5374953104 aSchannelFailed
@@ -6725,7 +6768,7 @@
 5378859520 ??_R0?AU?$chained_hash_node@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@blz@@V?$allocator@D@2@@blz@@UGxShaderOGL@@@blz@@@blz@@@8
 5375149760 aMarch_0
 5378851776 ??_R0?AV?$TSList@UCSceneMaterial@@V?$TSGetExplicitLink@UCSceneMaterial@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5374943520 aMailFailedD
+5370208544 j_snvprintf
 5375182536 aSr
 5375586024 aFailedToCreate_46
 5375987560 aFmodHighpassSi
@@ -6769,7 +6812,6 @@
 5374986040 aEngineSourceSe_3
 5375294696 aComponentTextu
 5375117120 aWowdownloadDen
-5374948808 aRetrS
 5376198152 aHttp365
 5375101920 aUnsupportedSsa
 5375551112 aFailedToCreate_36
@@ -6799,7 +6841,7 @@
 5375112480 aRenderTerrainA
 5374986128 aEngineSourceSe_4
 5375063704 aMovementHurry
-5375084440 aBadFaction
+5374953368 aSchannelNextIn
 5375569664 aBattleNetLabsT_37
 5378865968 aAvTslistUnetse
 5375281056 aInitFmodGameSy
@@ -6815,7 +6857,7 @@
 5375560936 aNewspanSizeHea
 5376209184 aFFF
 5375084480 aWrongDifficult
-5375129248 aScalarDeleting
+5369050784 task_character_parse_guild_emblem
 5376201328 aHttp555
 5376198600 aHttp393
 5376193792 aHttp98
@@ -6854,7 +6896,7 @@
 5375117336 aWowdownloadFor
 5375543328 aDBuildserverWo_20
 5375565304 aBrokenArmadill
-5374916272 __imp_acmStreamOpen
+5375211184 aIndex
 5375084584 aFailedWorldSta
 5375344896 aTradeskillcate
 5375117360 aWowdownloadNot
@@ -6884,8 +6926,10 @@
 5375216656 aWglswapinterva
 5375084648 aNotQuestPoolPi
 5375277248 aHbaoBias
+5375612225 aIcircumflex
 5375678784 aSubscriptX
 5375215728 aEngineSourceGx_3
+5376205800 aFarclip
 5378833336 ??_R0?AU?$list_node@UAsyncFile_FileChunk@@@blz@@@8
 5375564768 aBattleNetLabsT_28
 5375205736 aNmtoken_0
@@ -6923,7 +6967,7 @@
 5375405496 aGarrplot
 5375998488 aIsbj
 5374942392 aApopSS
-5374954528 aUsernameSRealm
+5375085600 aFactionStandin
 5375576264 aMTotalrawsize0
 5375577312 aBattleNetLabsT_48
 5375677696 aAvgCapitalWidt
@@ -6943,7 +6987,7 @@
 5376198888 aHttp409
 5375084780 aUndead
 5376195984 aHttp234
-5369121008 register_console
+5374953712 aSslTlsConnecti
 5375282168 aUsingUserSpeci
 5375567824 aAsyncstreamer
 5375216680 aWglArbMultisam
@@ -6963,7 +7007,7 @@
 5375084832 aAquatic
 5376198168 aHttp366
 5375174688 aOcp
-5375544368 aCdnPath
+5369039920 blz::string::resize
 5375084840 aMechanical
 5376178528 aFetchErrFailur
 5375230336 aGlsamplecovera
@@ -6985,6 +7029,7 @@
 5378849616 ??_R0?AV?$TSGrowableArray@V?$TSExplicitList@VCVisLight@@$0?CCCCCCCD@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375084896 aPetSlotError
 5376180712 aDownloadIdDDel
+5369066544 task_mount_scene_name
 5378851232 aAvTshashtableV_8
 5374976400 aDiffuseT1Env
 5375215976 aD3d12createdev
@@ -7024,7 +7069,6 @@
 5376190536 aNetOk
 5375080184 aQuestReward
 5375493304 aWorldPvpArea
-5375997728 aSowt
 5374986720 aPrepassmodel2
 5378870352 ??_R0?AV?$TSGrowableArray@V?$TSExplicitList@USE3SoundKitObjectLookup@@$0?CCCCCCCD@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375544400 aCdnServers
@@ -7047,7 +7091,6 @@
 5378847440 aAvTsgrowablear_15
 5376002592 aEngineSourceSo_63
 5374976432 aDiffuseEnvEnv
-5375084008 aLevelTooHigh_0
 5375117864 aWowdownloadGat
 5375587144 aMiscellaneousM
 5378833256 aAuphysinteract
@@ -7105,7 +7148,7 @@
 5374954168 aServerResponse
 5374986944 aRefraction
 5376190544 aNetCanceled
-5374998304 aInspectorDebug_0
+5371475744 memset
 5375085256 aSkirmish
 5374986960 a0PrecomputedTe
 5378858496 aAvTslistUdnove
@@ -7167,7 +7210,6 @@
 5375085424 aLevelTooHigh
 5376199152 aHttp424
 5374976488 aDiffuseT1T1T1
-5375209624 aFfxglowfade
 5375576952 aBlockoutputbas
 5375360200 aSpellcasttimes
 5375560968 aAllocqueryFail
@@ -7191,7 +7233,7 @@
 5375992304 aIceDescription
 5374987176 a34BandDynamicS
 5376185096 aNetAddrNone
-5375118256 aNotImplemented
+5369056176 task_character_post_140054BB0
 5374916424 DefWindowProcA
 5375085496 aSkillTooLow
 5375118272 aServiceUnavail
@@ -7229,7 +7271,7 @@
 5374987288 aShadowcachesha
 5376560156 aKernel32Dll_1
 5376194920 aHttp169
-5375085600 aFactionStandin
+5374954528 aUsernameSRealm
 5375522784 aLiquidLeyline
 5375118512 aAccessControlA_0
 5375020072 aCharacterfacia
@@ -7298,6 +7340,7 @@
 5375149624 aJan_1
 5374954704 aTotal
 5374954728 a0123456789_0
+5375227772 aThis
 5375085808 aNotInRaid
 5375556616 aFailedToCheckT
 5378878016 ??_R0?AU?$list_node@V?$shared_ptr@VHTTPFetcherRequest@bnl@@@blz@@@blz@@@8
@@ -7365,7 +7408,7 @@
 5375548984 aNullIdForDownl
 5375118576 aMovedPermanent
 5375118760 aNotFound
-5369089456 hex_string_to_int
+5374987696 aCshadereffect
 5375596856 aBluescale
 5374954936 aInitializesecu
 5378861496 aPeaK
@@ -7380,7 +7423,7 @@
 5375291560 aEngineSourceSo_2
 5375118816 aProxyAuthentic_1
 5375238736 aGldepthrangear
-5378858384 aAvTsfixedarray_50
+5369371008 json_get
 5376134640 aEngineSourceSo_65
 5375080360 aForceToNone
 5374987768 aScreeneffectsD
@@ -7482,7 +7525,7 @@
 5376184032 aMPendingrecvEm
 5375587184 aUnexpectedMark
 5378833296 ??_R0?AUPhysicsBone@@@8
-5369941728 phys_cvar_not_implemented
+5369941728 return_1
 5375216200 aD3d12serialize
 5374916560 OpenClipboard
 5375467160 aBattlepetvisua
@@ -7536,7 +7579,7 @@
 5375231480 aGlgetattribloc
 5374943888 aLookup
 5376190648 aNetErrInvalidA
-5374955368 aQuerycontextat
+5375086440 aQuestCriteriaN
 5376185128 aNetAddrInet6
 5376200560 aHttp507
 5374941240 aSHu
@@ -7560,14 +7603,14 @@
 5375610791 aNotequal
 5375119272 aParseFailureEx
 5376142576 aArtistPerforme
-5369843632 TlsFree
+5374955440 aEncryptmessage
 5375118664 aPermanentRedir
 5374988216 aOutlineHorizon
 5375610809 aLessequal
 5375079816 aActionWaitsUnt
-5369843648 TlsGetValue
+5374955456 aFailedToSendSs_2
 5375406064 aCommentatorsta
-5375610819 aGreaterequal
+5374974112 aEngineSourceMo_3
 5374943904 aClientLibcurl7_0
 5375086536 aWrongRole
 5376209136 aMap
@@ -7647,7 +7690,7 @@
 5375610986 aCacute
 5375543552 aDec
 5375988792 aLfReference
-5375086704 aUnused0
+5374955632 aFailedToReceiv_3
 5375610993 aCacute_0
 5375561064 aFilespanOffset
 5374988408 aVolumefogCreat
@@ -7660,7 +7703,7 @@
 5375585016 aHuffmanCodeSiz
 5378833568 aAvTshashtableV
 5375611021 aNotdef_0
-5375086736 aDodge
+5369942160 phys_register_console_commands
 5375611029 aSpace_0
 5375539224 aEMissingCryptk
 5374988440 aVolumefogtest
@@ -7672,7 +7715,7 @@
 5374948888 aBytes_0
 5375074368 aUnitSDespawnPe
 5375593840 aSfnt
-5374955688 aInvalidSspiEnc_0
+5375086760 aHitMelee
 5375611051 aNumbersign
 5376178592 aBattleNetLabsD_17
 5375606840 aType42_0
@@ -7712,7 +7755,7 @@
 5374988544 aVolumefogaddsc
 5375611139 aHyphen
 5375380864 aPvpitem
-5374955784 aDigit
+5375086856 aUnused2
 5375611146 aPeriod
 5375119628 aCdn
 5375119632 aVersions
@@ -7743,7 +7786,7 @@
 5375611204 aNine
 5375482456 aFriendshiprepr
 5375107808 aRaidGroundEffe_1
-5375086920 aResiliencePlay
+5374955848 aUpper
 5375611209 aColon
 5376185144 aHostTwo
 5375236952 aGlprogramunifo
@@ -7789,7 +7832,6 @@
 5374976752 aT1T2T3T4
 5375087016 aAvoidance
 5376184056 aMPendingsendEm
-5375210768 aGl32
 5375611308 aBracketleft
 5375361344 aLfgdungeonexpa
 5375612304 aScaron
@@ -7817,7 +7859,7 @@
 5376211336 hook_character_post
 5375288240 aErrorEnumerati
 5375539200 aEInternalDataE
-5375211600 aShadersSSSSBls
+5374916688 __imp_VerQueryValueA
 5375087080 aArmorPenetrati
 5378840960 aAvTsfixedarray_75
 5374988784 aTransformverti
@@ -7836,7 +7878,7 @@
 5375571936 aBattleNetLabsT_39
 5378868240 ??_R0?AV?$TSHashTable@USE3SoundKitObjectLookup@@VHASHKEY_NONE@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375611428 aBraceleft
-5374987696 aCshadereffect
+5369089456 hex_string_to_int
 5375100568 aWaterdetail
 5375087144 aVersatilityDam
 5376207456 aRace
@@ -7944,7 +7986,6 @@
 5375611671 aQuotedblbase
 5376199344 aHttp436
 5375087392 aAgility
-5374955456 aFailedToSendSs_2
 5375319720 aPositioner
 5376205616 aFailedToInitia_4
 5375087400 aStamina
@@ -8008,7 +8049,6 @@
 5375611821 aHungarumlaut
 5375980216 aHttps_1
 5375546288 aPatchArchiveGr_1
-5374988456 aVolumefogfront
 5378828336 ??_R0?AUEVENTDISPATCHREG@EventReg@@@8
 5376180800 aAddedFetchIdDT
 5371601736 LocaleEnumProc
@@ -8116,6 +8156,7 @@
 5375988768 aHfReference
 5376635632 aBAOsc
 5375015104 aTexturesGuilde_23
+5375291536 aInitSuppressor
 5375612044 aThreequarters
 5376201568 aHttp570
 5375284368 aAnEventFailedT
@@ -8133,7 +8174,7 @@
 5375118876 aGone
 5375238072 aGlprogramunifo_42
 5375612081 aMinus
-5375080648 aWorldQuest7
+5375113416 aWowSourceWorld_17
 5375612087 aEth_0
 5375585704 aCannotQuantize_0
 5375243528 aGlgetnuniformu
@@ -8201,7 +8242,7 @@
 5375153468 aFabs
 5378831168 ??_R0?AV?$TSList@UCM2SkeletonSequenceLoad@@V?$TSGetLink@UCM2SkeletonSequenceLoad@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375186240 aArDz_0
-5375612225 aIcircumflex
+5375063496 aOptions_0
 5376187360 aCacheControl
 5375153476 aModf
 5375064288 aCleanupActionR
@@ -8246,6 +8287,7 @@
 5374916848 waveOutWrite
 5375677864 aEndSpace
 5375612330 aUdieresis
+5375086224 aWrongArea
 5375186352 aArMa_0
 5375612340 aUgrave
 5375677880 aFaceName
@@ -8254,7 +8296,7 @@
 5375612354 aYdieresis
 5375580696 aKeymappingtabl
 5378851904 ??_R0?AV?$TSHashTable@UCSceneMaterial@@UHASHKEY_MATERIAL@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5375140768 aTooManyLinks
+5374944160 a127255s
 5375546824 aInstallSize
 5375229816 aGlgettexparame
 5375612364 aZcaron
@@ -8265,7 +8307,7 @@
 5375438496 aSpellscaling
 5375989856 aSine
 5376193912 aHttp106
-5370205664 SMemAlloc
+5375186400 aArSa_0
 5375086160 aWrongPlayerRea
 5375989456 aLowerVolumeRan
 5375100600 aRippledetail
@@ -8402,7 +8444,7 @@
 5376185192 aStatus
 5375547120 aEncodingAndEnc
 5376195680 aHttp215
-5374998824 aRip016llxCsr08
+5374966056 aOutOfPlaceIhdr
 5375612663 aDollarsuperior
 5375186680 aDeDe_0
 5375242456 aGlgettextureim
@@ -8411,6 +8453,7 @@
 5375086208 aWrongLfgState
 5375186696 aDeLi_0
 5375278264 aDS
+5375237456 aGlprogramunifo_20
 5369091856 hook_heartbeat_onquery
 5376628192 aX00
 5375612693 aAcutesmall
@@ -8431,9 +8474,10 @@
 5375186744 aElGr_0
 5375547200 aUnexpectedNumb_0
 5375456320 aGarrtype
-5374944224 aSyntaxErrorInT
+5374976992 aEngineSourceOb
 5378827912 ??_R0?AUEvtMessage@@@8
 5375186760 aEnAu_0
+5374959856 aInvalidChrmBlu
 5376209200 a533333533333
 5375579984 aStaticCastSize
 5375612756 aOnedotenleader
@@ -8598,7 +8642,7 @@
 5376185208 aOffset_0
 5375154384 aApiMsWinRtcore
 5375588360 aPrematureEndOf_0
-5374949752 aEngineSourceCu_47
+5374966136 aInvalidPlteAft
 5374941320 aFailedSendingC
 5375187160 aEsPa_0
 5375613145 aCircumflexsmal
@@ -8618,7 +8662,7 @@
 5375383808 aCinematicseque
 5375613187 aAsmall
 5375239200 aGlclearbuffers
-5374916992 __imp_select
+5375015296 aTexturesGuilde_27
 5375187208 aEsPy_0
 5375613194 aBsmall
 5375992080 aIcyNotice2
@@ -8661,7 +8705,7 @@
 5375613278 aNsmall
 5375678816 aSuperscriptSiz
 5375613285 aOsmall
-5375981968 aEngineSourceSo_13
+5369051536 task_character_parse_items
 5375187304 aFaIr_0
 5375990992 aLfoShapeMorphB
 5375235496 aGlgetbufferpar_0
@@ -8673,7 +8717,6 @@
 5376593640 aIiiIiiIiiIiiIi
 5375187320 aFiFi_0
 5375550176 aFailedToFetchC
-5378871576 ??_R0?AVSetEmitterPositionMsg@@@8
 5375154560 aExtMsWinNtuser
 5375229384 aGlteximage1d
 5376205888 aMelee
@@ -8766,6 +8809,7 @@
 5375566944 aMergeGroupInde
 5375182472 aEsHn
 5375187528 aHrHr_0
+5369066688 task_mount_create_scene
 5376557296 __IMPORT_DESCRIPTOR_ole32
 5374934784 aCouldnTResolve_0
 5375154768 aApiMsWinAppmod
@@ -8828,7 +8872,7 @@
 5375187688 aKnIn_0
 5378836672 aAustColor
 5375231072 aGlgetbufferpoi
-5375992096 aIcyNotice2_0
+5374943520 aMailFailedD
 5376142672 aRecordingLocat
 5375319960 aAzeriteitem
 5375580912 aBindDataError4
@@ -8930,6 +8974,7 @@
 5375155168 aLcmapstringex
 5375545168 aEncoderCreatio_0
 5374991336 aFooterOverwrit
+5376199840 aHttp467
 5375613935 aPeriodinferior
 5375548400 aInvalidBaseFil_0
 5375173800 aDes
@@ -8991,16 +9036,16 @@
 5375614065 aEgravesmall
 5375521832 aProcmagma
 5375597120 aStrokewidth
-5375086440 aQuestCriteriaN
+5374955368 aQuerycontextat
 5375188088 aQuzPe_0
 5376199424 aHttp441
 5375614077 aEacutesmall
-5375581312 aFailedToRename_2
+5369060480 task_creature_scene_name
 5374955536 aFailedToReceiv_4
 5374993600 aExecuted
 5375188104 aRoRo_0
 5375614089 aEcircumflexsma
-5375155344 aApppolicygetth
+5369093264 generic_render_wmo
 5375556728 aCkeysize0
 5375015448 aTexturesGuilde_0
 5375188120 aRuRu_0
@@ -9010,7 +9055,7 @@
 5374991520 aFileSLineD
 5376557316 __IMPORT_DESCRIPTOR_VERSION
 5375247960 aGputemperature
-5374938992 aContentTypeS
+5369106288 get_current_time_ptr
 5375188136 aSaIn_0
 5375574208 aLargeFileSize_0
 5375092128 aDuplicateUniqu_0
@@ -9032,7 +9077,7 @@
 5378836688 ??_R0?AV?$TSFixedArray@PEAVCM2Shared@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5374991564 aDelete
 5374993728 aErrors
-5375581392 aFcloseFailedAf
+5369060560 task_creature_create_scene
 5375470552 aArtifactpowerr
 5375570936 aHashVerificati
 5375119224 aFailedToParseH_0
@@ -9140,7 +9185,7 @@
 5375074480 aAbortActionSet_2
 5376198344 aHttp377
 5375614412 aBlack_1
-5379677648 aHttpUsPatchBat_0
+5369060816 task_creatureDisplayInfo_create_scene
 5375614418 aBold_0
 5375155224 aLocalenametolc
 5375141112 aFmodf
@@ -9179,8 +9224,9 @@
 5375130200 aTypeDescriptor
 5375188504 aTaIn_0
 5375613501 aCaronsmall
+5375193416 aDncloudsReflec
 5376138784 aFlacStreamDeco_28
-5374955440 aEncryptmessage
+5369843632 TlsFree
 5376197256 aHttp309
 5375188520 aTeIn_0
 5375286832 aNotEnoughMemor_5
@@ -9237,7 +9283,7 @@
 5375119304 aFailedToParseT
 5374959288 aEngineSourceIm
 5376198312 aHttp375
-5375352512 aQuestxgroupact
+5369061056 task_item_dtor
 5375174184 aEsy
 5375211064 aGr1616f
 5375188680 aViVn_0
@@ -9254,8 +9300,9 @@
 5374976288 aGuildNoborder
 5375173928 aEsb
 5375188728 aZhCht_0
+5375232704 aGlvertexattrib_20
 5376557336 __IMPORT_DESCRIPTOR_d3d9
-5376199840 aHttp467
+5369061120 task_item_create_scene
 5376198008 aHttp356
 5374933632 aTransferClosed_0
 5375188744 aZhCn_1
@@ -9449,14 +9496,12 @@
 5375539328 aERollback
 5375090920 aPtBrPtQ08EnQ01
 5375281336 aRevertingToSte
-5374959856 aInvalidChrmBlu
-5376194648 aHttp152
+5369061616 task_item_prepare_render
 5375086632 aInvalidPvpFact
 5375550240 aFailedToCreate_8
 5378871640 aAvcreateemitte
 5375585976 aInvalidJpegFil_2
 5375025408 aCreaturemodeld
-5374983896 aThreadpoolLp
 5376212064 aWmo
 5375239552 aGlgetframebuff_0
 5375090952 aItItItQ08EnQ01
@@ -9555,7 +9600,7 @@
 5375111616 aDebugOpaque
 5378879160 rtti_name
 5375538248 ExceptionInfo
-5375195912 aIdrefs
+5375064840 aWanderAConvexP
 5379908224 CriticalSection
 5375240312 aGlclearteximag
 5375568800 aInvalidBlockSi
@@ -9571,6 +9616,7 @@
 5376205408 aShmemInvalidAr
 5375114000 aMaparealodCull
 5374960232 aInvalidColorTy
+5375992096 aIcyNotice2_0
 5375992160 aIcyGenre_0
 5375550064 aArchivecompone
 5375520792 aCleardisplmap
@@ -9592,7 +9638,7 @@
 5375341848 aGmsurveycurren
 5375091360 aExpectedDBytes
 5376195112 aHttp181
-5374955632 aFailedToReceiv_3
+5375086704 aUnused0
 5374927528 aInvalidLengthM
 5375581616 aDBuildserverWo_16
 5375126896 aName
@@ -9619,6 +9665,7 @@
 5375555712 aDeletingEKeyS
 5374927592 aEngineSourceBl
 5376201264 aHttp551
+5375209824 aFfxSketchEdges
 5369062128 get_default_scene_name_m2
 5375586264 aVirtualArrayCo
 5374966568 aIgnoringIncorr
@@ -9640,8 +9687,8 @@
 5369090768 hook_pet_onquery
 5378829104 ??_R0?AU?$chained_hash_node@U?$pair@$$CBHPEAVCM2Shared@@@blz@@@blz@@@8
 5374927648 aInvalidOrUnsup
-5376210392 aContentTypeIma
-5375015728 aTexturesGuilde_7
+5369843648 TlsGetValue
+5375081264 aGuildCreateSuc
 5378834560 aAuribbonspline
 5375611014 aDcroat
 5375091504 aFileSHasUnacco
@@ -9660,7 +9707,7 @@
 5376142744 aMovieVideoScre
 5369062240 sscanf
 5375570992 aExpand32ByteK
-5369942160 phys_register_console_commands
+5375086736 aDodge
 5374960488 aInvalidFilterM
 5376198392 aHttp380
 5374927728 aUnsupportedFor
@@ -9670,7 +9717,7 @@
 5376184208 aPollCallsKeepF
 5374993280 aTheInstruction
 5375587360 aAtMarker0x02xR
-5375179584 aIt_0
+5374982976 aEngineSourcePh_2
 5374960520 aInvalidIhdrDat
 5375189904 aEngineSourceBa_3
 5375276976 aDefaultPct
@@ -9683,7 +9730,7 @@
 5374961136 a128
 5375091624 aTableSFailedTo_0
 5369062320 task_m2_ctor
-5375179592 aJa
+5375081288 aDeletewornitem
 5376205756 aY_0
 5375243656 aGlExtTextureFi
 5375189952 aEngineSourceBa_0
@@ -9703,19 +9750,21 @@
 5374993376 aWritten
 5375179600 aKo_0
 5376138384 aFlacStreamDeco_19
-5376205800 aFarclip
+5376185920 aNameResolution
 5375566632 aMergeBaseIndex
 5369029616 parse_scene_xml
 5376201376 aHttp558
 5375989024 aLowpassCutoffF
-5375086760 aHitMelee
-5379866776 aIilIilIil_0
+5374988456 aVolumefogfront
+5376209308 aAmbcol
 5375091704 aDbfilesclient
+5375569312 aTruncatedEntry
 5378849968 aAvTsgrowablear_11
 5376199488 aHttp445
 5376205824 aFieldofview
 5374977536 aCom5
 5375091720 aInvalidSignatu
+5376185664 aHostip
 5376205840 aOrthoproj
 5375538264 aAmPm
 5375081304 aSpellResources
@@ -9776,7 +9825,7 @@
 5375985632 aVolumeOfOrigin_0
 5375112728 aSSDDObj1Adt
 5376186400 aCountMRecvbuff
-5375212400 aPnct3
+5374985648 aWv
 5375026344 aItemdisplayinf
 5378835664 aAuChainedHashN
 5376206000 aFramespersecon
@@ -9788,7 +9837,7 @@
 5378852032 aAvTsfixedarray_40
 5376206028 aFrames
 5374993616 aProcessidD
-5375179640 aRo
+5375212408 aPc
 5376206040 aRotatedelta
 5376137656 aFlacStreamDeco_3
 5374993632 aFrameTextForCu
@@ -9822,7 +9871,7 @@
 5376209016 aEnablegeosetli
 5374928176 aNan_0
 5374928180 aInf_0
-5375179656 aHr
+5375212424 aPct3
 5375239304 aGlpushdebuggro
 5374928184 aInf_1
 5376205088 aBattleNetLabsS_0
@@ -9841,7 +9890,7 @@
 5375583584 aSorryThereAreL
 5375286224 aAnInvalidObjec
 5374928228 aLength
-5375114128 aWaterRipples
+5375179664 aSk
 5375092072 aDuplicateUniqu
 5375316776 aGlyphbindables
 5374928240 aEncounteredPoo
@@ -9860,7 +9909,7 @@
 5375288720 aPanningOnlyWor
 5376211504 hook_maps
 5375982936 aFmodNonblockin
-5375212440 aPct5
+5374966680 aInvalidSbitAft
 5374993816 aDbgOptionsFunc
 5378760384 aFmodHighpassSi_0
 5378880304 aAuRbNodeUPairC_4
@@ -9896,7 +9945,7 @@
 5375321576 aSpelllearnspel
 5376206316 aScenes
 5374928368 aDBuildserverWo_0
-5375212456 aPbnt2
+5375081384 aSoldToNpcT
 5378834584 ??_R0?AURibbonAnimPoint@@@8
 5374961144 aZlibMemoryErro
 5374966528 aIgnoringGamaCh
@@ -9915,13 +9964,13 @@
 5375288864 aTheNumberOfAll
 5378831312 ??_R0?AV?$TSList@UM2SkeletonSharedCallback@@V?$TSGetLink@UM2SkeletonSharedCallback@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5378846384 ??_R0?AV?$TSFixedArray@PEAVCMapObjGroupInst@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5375212464 aPnc2
+5375065008 aGuardAnAreaNot
 5378838624 aP6axihpebe0Z
 5374961192 aUnknownZlibErr
 5375992192 aIcyUrl_0
 5374993968 aExceptiontypeS
 5375571016 aExpand16ByteK
-5375086856 aUnused2
+5375103240 aDetailDoodadIn
 5375997648 aEngineSourceSo_44
 5376206396 aCas
 5375325512 aMaploadingscre
@@ -9969,7 +10018,7 @@
 5375387328 aGarrbuildingpl
 5374944712 aTimeOut
 5376194056 aHttp115
-5369090336 hook_wmo_onquery
+5375119648 aErrorDownloadi
 5375321800 aJournaltier
 5375998744 aFmodFsbCodec
 5375256268 aBlack_0
@@ -10006,7 +10055,6 @@
 5374961448 aTooManyIdatsFo
 5375572240 aRandomAccess
 5376198424 aHttp382
-5375980320 aHttps_0
 5375256368 aFadedCobalt
 5375174280 aEnu_6
 5374994232 aFltDenormalOpe
@@ -10028,8 +10076,9 @@
 5375256428 aCrusta
 5378855328 aAvTslistUwowco
 5375188040 aPtPt_0
-5375179752 aLt
+5375212520 aPt2Idd
 5375256440 aFadedCrusta
+5375211112 aAbgr32323232f
 5374994304 aFltInvalidOper
 5378866240 aAvTsfixedarray_62
 5374955840 aBlank
@@ -10041,6 +10090,7 @@
 5375256216 aDebugdraw
 5375464656 aSpellspecialun
 5374994328 aFltOverflow
+5376199200 aHttp427
 5375234960 aGlrenderbuffer_0
 5375289248 aTheSpecifiedSo_0
 5376197880 aHttp348
@@ -10050,7 +10100,7 @@
 5375987840 aDelayForLeftCh
 5375190952 aImpedimentReso
 5378860976 ??_R0?AU?$pair@$$CB_KPEAUID3D12PipelineState@@@blz@@@8
-5374955848 aUpper
+5375086920 aResiliencePlay
 5375547024 aUnexpectedNumb
 5374994360 aFltUnderflow
 5376646768 lpClassName
@@ -10084,7 +10134,7 @@
 5375238576 aGlgetvertexatt_5
 5375584256 aBogusSamplingF
 5378831328 aAvTslistUm2ske
-5375212544 aPnctId
+5374966784 aMissingIhdrBef_1
 5374994440 aInPageError
 5378836784 ??_R0?AUst_race@@@8
 5375289360 aAnErrorOccured_1
@@ -10099,7 +10149,7 @@
 5374934904 aCouldnTBindToI
 5374994480 aNoncontinuable
 5375587400 aRstD
-5375179784 aAz
+5375212552 aPnct2Id
 5375191096 aTactClienthand
 5374915264 GlobalMemoryStatusEx
 5375240104 aGltexstorage3d_0
@@ -10109,7 +10159,7 @@
 5376195160 aHttp184
 5375119712 aWowSourceWowse_3
 5374928968 aCvarSIsS
-5375548120 aPatchEntry
+5370229952 storm_setopt
 5374951272 aSocks5NoConnec
 5374994512 aStackOverflow
 5375578672 aMWriterthreadi_0
@@ -10130,7 +10180,7 @@
 5374994568 aInvalidHandle
 5376148896 aDHuffMtf
 5374929040 aPendingValueS
-5375114264 aWowSourceWorld_18
+5375179800 aMk
 5374994584 aFloatMultipleF
 5375466288 aSpellflyoutite
 5375256736 aFadedLightGray
@@ -10151,7 +10201,6 @@
 5376190800 aNetErrConnecti_1
 5378828496 ??_R0?AV?$TSFixedArray@VCXMLAttribute@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375231376 aGlenablevertex
-5374915680 __imp_Module32First
 5375234424 aGlclearbufferu
 5375322328 aCameramode
 5374929120 aResettingAllCv
@@ -10190,7 +10239,7 @@
 5375257888 aDbgAddrPS_0
 5375559040 aInvalidFieldSI
 5375191376 aTeam2WowRc
-5375212600 aPnc2tTsId
+5375081528 aTradeFailure
 5374994776 aSerrorU
 5374929248 aSet
 5376205968 aDiffusecolor
@@ -10205,6 +10254,7 @@
 5374977768 aFile
 5375455384 aNamesreserved
 5374994808 aAgentExe
+5375129248 aScalarDeleting
 5375256960 aMintGreen
 5379680240 TlsIndex
 5374994820 aDmp
@@ -10318,6 +10368,7 @@
 5375549232 aStoragecompone
 5375191744 aCanceled
 5375289120 aTheSpecifiedSo
+5375554688 aDataBlockDOffs
 5378876088 aAuListNodeUpat
 5369118112 cvar_set
 5376142036 a121
@@ -10338,7 +10389,7 @@
 5376178816 aBattleNetLabsD_1
 5374995192 aStormSourceScm
 5378828080 ??_R0?AV?$TSFixedArray@PEAUEvtTimer@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5375093504 aWowSourceDbDbe_0
+5375126272 aWowLiveDev
 5375179904 aTa
 5374929672 aNoHelpYet
 5375191824 aUnknownCasErro
@@ -10371,6 +10422,7 @@
 5375224664 aBlendweight
 5378877184 ??_R0?AU?$list_node@V?$shared_ptr@VStandardDownloadServerSet@bnl@@@blz@@@blz@@@8
 5376142172 aLpc
+5376208280 task_creatureDisplayInfo_vtable
 5374962528 aWriteError
 5374929764 aAll
 5374983312 aEngineSourcePh_8
@@ -10396,7 +10448,7 @@
 5375552400 aFailedToCreate_40
 5376207764 aShirt
 5375196312 aIllegalParamet
-5376207772 aWrist
+5374916384 SendInput
 5375242632 aGlgettexturepa_1
 5375191968 aUnableToInitia_2
 5375607600 aWinfonts
@@ -10606,7 +10658,6 @@
 5375211008 aR8Unorm
 5379865848 aEeeEee
 5378928088 hWnd
-5374915312 __imp_Process32FirstW
 5375258080 aBindFailed
 5375562320 aDeleteRequestF
 5376195208 aHttp187
@@ -10659,7 +10710,7 @@
 5375326672 aAzeritepower
 5375678016 aMaxSpace
 5375174584 aKor_0
-5375258200 aAcceptexFailed
+5374955688 aInvalidSspiEnc_0
 5378829200 ??_R0PEAU?$chained_hash_node@U?$pair@$$CBHPEAVCM2Shared@@@blz@@@blz@@@8
 5374963296 aTrnsChunkHasOu
 5378856096 aPeauscheduledc
@@ -10675,6 +10726,7 @@
 5375109056 aWowSourceWorld_8
 5375585928 aInvalidJpegFil_1
 5375243368 aGlgetcompresse_1
+5376207216 task_character_base_vtable
 5378862736 aAvTsfixedarray_54
 5375484888 aManifestinterf_1
 5375509984 aSoundemitterpi
@@ -10688,15 +10740,16 @@
 5375070832 aUnitSDonTClear
 5375520896 aLiquidDestroyp
 5375389352 aPvpreward
+5375612551 aScaron_0
 5374949144 aCcc
-5376193320 aHttp39
+5376198488 aHttp386
 5374930608 a255D255s
 5379866040 aIilIil
 5375174600 aTto
 5375127224 ??_7type_info@@6B@
 5375127232 aApiMsWinCoreSy
 5374930628 aHttp
-5375114528 aDBuildserverWo_10
+5375098144 aDecal
 5375192776 aPsvreaderwrite
 5374930636 aHttps_3
 5376189760 aHttpFetcherNot
@@ -10765,7 +10818,6 @@
 5375291256 aSoundAmbienceh
 5376206568 aErorInCurlMult
 5376190048 aHttpShuttingDo_0
-5374982976 aEngineSourcePh_2
 5375324032 aQuestsort
 5375080376 aTimewalker
 5375294784 aLevelOfDetailF
@@ -10778,7 +10830,7 @@
 5375087256 aArmorMultiplie
 5375291288 a80
 5378842304 ??_R0?AV?$TSHashTable@VCMapObj@@UHASHKEY_MAPOBJ@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5374949152 aFailedToClearT
+5375997728 aSowt
 5375291296 aTheCutoffValue_0
 5375551456 aAccesscomponen
 5374978032 aCentaurhauls
@@ -10900,7 +10952,7 @@
 5375127736 aKernel32
 5371654329 Process32NextW
 5378764986 aFrequencyGain
-5375573288 aCeDiskFull
+5375548192 aInvalidTargetC_0
 5378844496 ??_R0?AV?$TSHashTable@VCMapTexture@@VHASHKEY_NONE@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5371654335 Thread32First
 5374931136 aEmptyReplyFrom
@@ -10937,7 +10989,7 @@
 5375553792 aCacheoutputsiz
 5375239048 aGlgetactiveato
 5375081856 aArenaTeamCreat
-5375062280 aNoGeosetShowHe
+5374931208 aHost
 5375127824 aFlsfree
 5375127832 aFlsgetvalue
 5375597296 aWeightvector
@@ -10966,10 +11018,11 @@
 5375258968 aOsnetInfoS
 5375586832 aFreedEmsHandle
 5378837552 ??_R0P6AXPEBDW4COLOR_T@@@Z@8
-5374964064 aZlibFailedToIn_1
+5374931296 aS02dS4d02d02d0
 5376210584 a13dSGMs
 5376179600 aDownloadMStart
 5375521128 aWowSourceLiqui_0
+5375230736 aGlblendequatio
 5376564040 aUser32Dll_0
 5378866576 ??_R0?AV?$TSHashTable@UFONTHASHOBJ@@UFontHashKey@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5375258992 aOstcpBase
@@ -10991,7 +11044,7 @@
 5375436904 aHolidaydescrip
 5374964120 aZlibFailedToIn_2
 5378870960 ??_R0?AV?$TSFixedArray@V?$TSExplicitList@USE3SoundChunk@@$0?CCCCCCCD@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5376209308 aAmbcol
+5375015728 aTexturesGuilde_7
 5375116112 aUnableToInitia
 5374931360 aIfUnmodifiedSi
 5375567840 aContentOrderVi
@@ -11016,7 +11069,7 @@
 5375578872 aMReadermutexBu
 5378841232 aAvTsfixedarray_13
 5375062488 aNoGeosetDefaul_0
-5378848352 aAvTsfixedarray_36
+5374948080 aFailureSending_1
 5374998272 aInspectorDebug
 5374931420 aPost
 5375554016 aFailedToDeterm_1
@@ -11059,7 +11112,6 @@
 5374994528 aInvalidDisposi
 5375193672 aDnglarequery
 5378876152 aAuqueryspanTac
-5374932808 aIdentity
 5375256488 aDarkMagenta
 5376182152 aDownloadReject_1
 5375062608 aDefaultNoGeose_3
@@ -11122,7 +11174,6 @@
 5375570296 aCanTGoWithNull
 5375193832 aDnskyReflectio
 5376182416 aFetcherrorFetc
-5375064840 aWanderAConvexP
 5375315800 aCreaturedispla_3
 5375062768 aNoGeosetDefaul_4
 5374931700 aFtp
@@ -11173,6 +11224,7 @@
 5374967272 aInvalidIccpAft
 5378834064 ??_R0?AV?$TSList@VCMipBitsCache@@V?$TSGetExplicitLink@VCMipBitsCache@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5374997368 aLuaScriptError
+5374915360 LoadLibraryA
 5375554432 aFailedToInitia_3
 5378839064 aAuentryDb2look_1
 5375988544 aCompressorMake
@@ -11200,6 +11252,7 @@
 5378846704 aAvTsgrowablear_54
 5375240352 aGlbindbuffersb
 5374997448 aSoftwareBlizza
+5376208168 task_creature_vtable
 5374931920 aContentRangeBy
 5376208352 aItem
 5375229432 aGlclear
@@ -11267,7 +11320,7 @@
 5375542768 aFailedToDownlo_1
 5374940008 aCannotPauseRtp
 5375063160 aTriggers
-5375554688 aDataBlockDOffs
+5369066624 task_mount_dtor
 5376200720 aHttp517
 5375063172 aWander
 5375584448 aBogusVirtualAr
@@ -11367,18 +11420,19 @@
 5375109352 aPurePrepass
 5375063416 aDungeonEncount
 5378846288 ??_R0?AV?$TSFixedArray@VVec3@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5374931744 aAccept_0
+5375980320 aHttps_0
 5376206184 aBackground
 5375587712 aOpenedTemporar
 5375579960 aLz4EmptyOutput
 5375114816 aWowSourceWowco_0
-5374932360 aFailedSendingP
+5374965128 aTrailingSpaces
 5375565936 aLoadblockSeekF
 5375991968 aConnectionClos
 5375063440 aSpellVisualKit
 5378855832 aAuscheduledcal
 5375544960 aServers
 5375227288 aVidMemUMb
+5374998304 aInspectorDebug_0
 5375173976 aEsc
 5375554976 aInternalErrorF
 5375575512 aSubpathSOfFile
@@ -11440,7 +11494,7 @@
 5375230720 aGlblendcolor
 5374932540 aRtsp
 5378828176 ??_R0?AV?$TSFixedArray@I$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5375578376 aFailedToCreate_44
+5375211104 aR32f
 5375574448 aLargeFileSize
 5375082080 aCurrentAccount
 5375063624 aCombatPosition
@@ -11461,6 +11515,7 @@
 5374965368 aUnrecognizedUn
 5375238360 aGlvertexattrib_66
 5375991912 aProxyAuthoriza_0
+5375564608 aMOffsetMSize
 5375129216 aDefaultConstru
 5374992856 aHandleS
 5376201664 aHttp576
@@ -11539,7 +11594,7 @@
 5375294904 aCharacterCompo
 5378864192 aAvTshashtableU_6
 5374972896 aProcedural
-5375129416 aEhVectorConstr
+5374932808 aIdentity
 5376195288 aHttp192
 5375522640 aLeylineabove
 5376148392 aMemError
@@ -11558,7 +11613,7 @@
 5376205992 aLight
 5375570072 aSetekeyErrorTh
 5375096696 aWowSourceWorld_1
-5375227772 aThis
+5374948128 aPretS
 5375173992 aEsd
 5374932864 aXCompress
 5375227780 aOther
@@ -11566,7 +11621,7 @@
 5375391624 aAreatriggercyl
 5375555888 aInvalidContext
 5378852192 ??_R0?AV?$TSGrowableArray@PEAUCSceneMaterial@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5375129488 aEhVectorVbaseC
+5374932880 aContentEncodin
 5375210000 aFfxsketchoverl
 5375229592 aGlblendfunc
 5375063960 aMovementMoveBa
@@ -11587,7 +11642,6 @@
 5374983840 aAttemptedToAdd
 5375096776 aCmapchunkbufIn
 5375538432 aNvpowerapiDll_0
-5374966680 aInvalidSbitAft
 5374965712 aPngUnsignedInt
 5376140736 aEngineSourceSo_72
 5375575760 aOpenFailForSXS
@@ -11614,7 +11668,6 @@
 5375113984 aTerrainblendlo
 5375465328 aQuestfeedbacke
 5378832384 ??_R0?AV?$TSGrowableArray@PEA_W$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
-5374985648 aWv
 5375992344 aIcePublic
 5375069248 aObjectSPlayASo_0
 5376201728 aHttp580
@@ -11626,9 +11679,9 @@
 5378847832 ??_R0?AVFogQ@@@8
 5375584600 aTooManyColorCo
 5375080160 aScenarioHeroic
-5375230736 aGlblendequatio
+5375180544 aHyAm
 5374998560 aCsr08xMsk08x
-5376196272 aHttp252
+5375236192 aGlsamplerparam_4
 5375588392 aCorruptJpegDat_2
 5375587536 aComponentDDhxD
 5375129644 aNew_1
@@ -11714,14 +11767,14 @@
 5375205648 aEmpty
 5375064336 aAbortActionSet_3
 5376209488 aDBuildserverWo
-5375211104 aR32f
+5374983896 aThreadpoolLp
 5375097112 aSnowpoint
 5375562448 aFailedToOpenFi
 5375523104 aImguiLogTxt
 5375542808 aFailedToWriteD
 5375097124 aRain_0
 5375497264 aSoundkitfallba
-5374966056 aOutOfPlaceIhdr
+5374998824 aRip016llxCsr08
 5376195304 aHttp193
 5375097132 aDrop
 5375282032 aFailedToGetDri
@@ -11768,7 +11821,8 @@
 5375226384 aGxdeviced3d11I_2
 5375355288 aPathnode
 5375555992 aStateptr0State
-5375081264 aGuildCreateSuc
+5374955784 aDigit
+5376194648 aHttp152
 5375181648 aEsGt
 5375256936 aFadedMediumSla
 5375064480 aDespawnAtEndOf
@@ -11810,10 +11864,11 @@
 5375557000 aPagebufferpEnt
 5374933504 aOperationTimed_0
 5376184400 aFailedToSetSoc
-5375180544 aHyAm
+5369069312 task_pet_dtor
 5375064584 aDisableAiSteer
 5378833664 ??_R0?AV?$TSList@VCTexture@@V?$TSGetExplicitLink@VCTexture@@@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
 5374966288 aTruncatingInco_0
+5375241888 aGltexturestora
 5378839120 aAuentryDb2look_2
 5375988824 aSpeakerMixFr
 5375247120 aCrossfireAdapt
@@ -11871,7 +11926,6 @@
 5376001096 a3di
 5375568328 aFailedToIssueD
 5374933688 aNoUrlSet
-5374932880 aContentEncodin
 5375326912 aCreaturedispxu
 5375259128 aS11
 5375115040 cp
@@ -11894,6 +11948,7 @@
 5374967592 aMalformedSpltC
 5375195900 aId
 5375195904 aIdref
+5375216576 aWglgetpixelfor
 5375235200 aGldrawelements_0
 5375097608 aWowSourceWorld_2
 5376195320 aHttp194
@@ -11923,6 +11978,7 @@
 5379866424 aIilIilIil_1
 5375064920 aPatrolBackAndF
 5374966624 aGammaD100000
+5376208056 task_character_post_vtable
 5375543824 aInPsvFileSLine_0
 5375181216 aFrBe
 5376185488 aBattleNetLabsD_4
@@ -11934,7 +11990,7 @@
 5375243192 aGlgetquerybuff
 5375608296 aAddStyleName
 5378829312 aAvTsgrowablear_2
-5375196992 aCdata_0
+5369069376 task_pet_create_scene
 5376179080 aFllbackTotalCa
 5375337696 aItemarmortotal
 5375538464 a0123456789abcd_6
@@ -11958,6 +12014,7 @@
 5376187688 aHttpFetchIdDRe_4
 5375556544 aTheInputEkeyDo
 5375571184 aBspatchFailedT
+5376196272 aHttp252
 5375104160 aGraphicsviewdi
 5374966728 aDuplicateSbitC
 5375565472 aBattleNetLabsT_30
@@ -12028,7 +12085,6 @@
 5378848960 aAvTsgrowablear_20
 5375256248 aImguiFont
 5374934124 aFlush
-5375081288 aDeletewornitem
 5376205152 aMutexlock
 5376569960 aYyyy_0
 5374966896 aIncorrectChrmC
@@ -12092,7 +12148,7 @@
 5374966704 aOutOfPlaceSbit
 5376632880 aMitteleuropais
 5378830416 aAvm2element
-5374984064 aDBuildserverWo_5
+5375016832 aBgcolor
 5375211552 aEngineSourceGx
 5374967048 aMissingIhdrBef_11
 5376136416 aFmodWasapiOutp
@@ -12101,7 +12157,7 @@
 5374934296 aFile_0
 5378841328 aAvTslistVcdeta
 5375996752 aEngineSourceSo_38
-5375098144 aDecal
+5374934304 a15_1
 5375240752 aGlnamedbuffers_0
 5376212112 aChunkindex
 5375065384 aUnitSFaceAPart
@@ -12274,6 +12330,7 @@
 5375238432 aGlvertexattrib_69
 5369069296 get_default_scene_name_pet
 5375350056 aGarrability
+5369052816 task_character_parse_item_sub
 5375229688 aGlpixelstorei
 5375065856 aChangeRadiusRe
 5378846800 ??_R0?AV?$TSGrowableArray@PEAVCMapDecal@@$1?g_MemCatSTPL@@3VSMemoryCategory@@A@@@8
@@ -12373,5 +12430,5 @@
 5374967792 aIncorrectTrnsC
 5375027880 aCharsections
 5374935032 aGetpeernameFai
-5378836704 aAvTsfixedarray_92
+5374978752 aGetdpiformonit
 5376177904 aBattleNetLabsD_15
