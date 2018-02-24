@@ -60,6 +60,8 @@ struct var
 template<typename Ret, typename... Args>
 struct fun<Ret(Args...)> : var<Ret(Args...), false>
 {
+  using signature = Ret(Args...);
+
   using var<Ret(Args...), false>::var;
 	using var<Ret(Args...), false>::operator void *;
 	Ret operator() (Args... args)
