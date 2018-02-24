@@ -111,7 +111,7 @@ struct route_arg_3_t
 
 struct CVar;
 fun<CVar* (char const*, char const*, unsigned int, char const*, bool (*)(CVar*, char const*, char const*, void *), unsigned int, bool, void *, bool)> CVarRegister 
-  = search_pattern ("48 8B C4 55 56 41 54 41 57 48 83 EC 48 4D 8B F9 41 8B F0 4C 8B E2 48 8B E9 48 85 C9 0F 84 FC 02 00 00 80 39 00");
+  = search_pattern ("48 8B C4 55 56 41 ?? 41 57 48 83 EC 48 4D 8B F9 41 8B F0 4C 8B ?? 48 8B E9 48 85 C9 0F 84 ?? ?? ?? ?? 80 39 00");
   // WOW-23038patch7.1.5_PTR: 0x140062830
   // WOW-25902patch8.0.1_Beta: 0x1400638D0
 
