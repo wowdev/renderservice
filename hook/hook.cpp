@@ -264,9 +264,7 @@ void on_inject()
 extern "C" void __declspec(dllexport) __stdcall NativeInjectionEntryPoint(REMOTE_ENTRY_INFO* inRemoteInfo)
 {
   on_inject();
-  
-  add_route ("/test", &callback_test);
-  
+    
   RhWakeUpProcess();
 }
  
