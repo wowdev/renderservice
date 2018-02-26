@@ -94,4 +94,6 @@ extern "C" void __declspec(dllexport) __stdcall NativeInjectionEntryPoint(REMOTE
        );
 	   
   add_route ("/test", &callback_test);
+  
+  RhWakeUpProcess();
 }

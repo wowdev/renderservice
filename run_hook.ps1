@@ -32,15 +32,4 @@ if(Test-Path -Path $script_dir/hook-install) {
 }
 & cmake --build $script_dir/hook-build --config Release --target install
 
-$renderservice = Start-Job -ArgumentList $script_dir -ScriptBlock {
-	& "$($args[0])/run_renderservice.ps1" 2>&1 | Write-Host
-}
-& hook-install/RenderServiceInjector.exe "${script_dir}/hook-install/RenderServiceHook.dll"
-
-while ($renderservice.State -eq 'Running') {
-  Receive-Job $renderservice  2>&1 | Write-Host
-  Start-Sleep -Milliseconds 50
-}
-Receive-Job $renderservice
-Stop-Job $renderservice
-Remove-Job $renderservice
+& "${script_dir}/run_renderservice.ps1" -injector "${script_dir}/hook-install/RenderServiceInjector.exe" -inject_dll "${script_dir}/hook-install/RenderServiceHook.dll" -use_injector

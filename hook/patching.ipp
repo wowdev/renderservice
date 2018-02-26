@@ -25,6 +25,26 @@ namespace
   };
 }
 
+namespace 
+{
+  char* module_base()
+  {
+    MODULEINFO info;
+    GetModuleInformation(GetCurrentProcess(), GetModuleHandle (nullptr), &info, sizeof (info));
+    return static_cast<char*> (info.lpBaseOfDll);
+  }
+  constexpr std::intptr_t const rebase_base(0x140000000);
+}
+
+inline void* rebase (std::size_t offset)
+{
+  return static_cast<void*> (module_base() + offset - rebase_base);
+}
+inline std::size_t unrebase (void const* pointer)
+{
+  return static_cast<char const*> (pointer) - module_base() + rebase_base;
+}
+
 template<typename T, bool unprotect = true>
 struct var
 {
@@ -43,11 +63,7 @@ struct var
 	{
 		if (_x) return;
 
-		constexpr std::intptr_t const rebase_base(0x140000000);
-		MODULEINFO info;
-		GetModuleInformation(GetCurrentProcess(), GetModuleHandle(nullptr), &info, sizeof(info));
-
-		_x = static_cast<T*> (static_cast<void*> (static_cast<char*> (info.lpBaseOfDll) + (_offset - rebase_base)));
+		_x = static_cast<T*> (rebase (_offset));
 
 		maybe_unprotect<unprotect, T>::apply(_x, &old);
 	}

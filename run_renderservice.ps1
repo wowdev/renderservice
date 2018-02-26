@@ -1,11 +1,16 @@
-﻿$ErrorActionPreference = "Stop"
+﻿param (
+  [switch]$use_injector = $false,
+  [string]$injector = "",
+  [string]$inject_dll = ""
+)
+
+$ErrorActionPreference = "Stop"
 $PSDefaultParameterValues['*:Encoding'] = 'utf8'
 $script_dir = (split-path $MyInvocation.MyCommand.Path) 
 
 . $script_dir/config.ps1
 
-$tmp = New-TemporaryFile
-$tmppath = $tmp.FullName
+$tmppath = "${script_dir}/run_renderservice-tmp_config"
 
 Write "<?xml version=`"1.0`" encoding=`"UTF-8`" standalone=`"no`" ?>" | Out-File "$tmppath"
 Write "<config>" | Out-File -Append "$tmppath"
@@ -18,8 +23,14 @@ Write "</config>" | Out-File -Append "$tmppath"
 
 cat $tmppath
 
-"$install_dir\RenderService-64.exe -port $port -config $tmppath -level $gxlevel"
+$cmdline = "$install_dir\RenderService-64.exe -port $port -config $tmppath -level $gxlevel -debugFrame 1"
+
+$cmdline
 & { 
   $ErrorActionPreference='continue'
-  & "$install_dir\RenderService-64.exe" -port $port -config $tmppath -level $gxlevel 2>&1
+  if ($use_injector) {
+    & $injector $inject_dll $cmdline 2>&1
+  } else {
+    & $cmdline 2>&1
+  }
 }
