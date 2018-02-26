@@ -103,27 +103,66 @@ try
   switch (t)
   {
     case 0:
-    case 1:
+      switch (f)
+      {
+        case 0|0|0: 
+          return " int0?00"; // ???
+        case 0|0|1: 
+          return " int0?01"; // ???
+        case 0|2|0: 
+          return " int0?20"; // ???
+        case 0|2|1: 
+          return " int0?21"; // ???
+        case 4|0|0:
+          return "uint0?00"; // ???
+        case 4|0|1:
+          return "uint0?01"; // ???
+        case 4|2|0:
+          return "uint0?20"; // ???
+        case 4|2|1:
+          return "uint0?21"; // ???
+        default:
+          throw std::logic_error ("f != ???");
+      }
     case 4:
+      switch (f)
+      {
+        case 0|0|0: 
+          return " int4?00"; // ???
+        case 0|2|0: 
+          return " int4?20"; // ???
+        case 4|0|0: 
+          return "uint4?00"; // ???
+        case 4|2|0: 
+          return "uint4?20"; // ???
+        default:
+          throw std::logic_error ("f != ???");
+      }
     case 5:
       switch (f)
       {
-        case 0|0|0:
-          return "int";   
-        case 0|0|1:
-          return "int?01"; // ???      
+        case 0|0|0: 
+          return " int5?00"; // ???
+        case 0|0|1: 
+          return " int5?01"; // ???
         case 0|2|0: 
-          return "int?20"; // ???
-        case 0|2|1:
-          return "int?21"; // ???
-        case 4|0|0:
-          return "uint";
-        case 4|0|1:
-          return "uint?01"; // ???
+          return " int5?20"; // ???
+        case 4|0|0: 
+          return "uint5?00"; // ???
+        case 4|0|1: 
+          return "uint5?01"; // ???
         case 4|2|0: 
-          return "uint?20"; // ???
-        case 4|2|1:
-          return "uint?21"; // ???
+          return "uint5?20"; // ???
+        case 4|2|1: 
+          return "uint5?21"; // ???
+        default:
+          throw std::logic_error ("f != ???");
+      }
+    case 1:
+      switch (f)
+      {
+        case 0|0|0: 
+          return " int1?00"; // ???
         default:
           throw std::logic_error ("f != ???");
       }
