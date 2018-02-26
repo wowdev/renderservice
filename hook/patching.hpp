@@ -15,8 +15,11 @@ template<unsigned char... nth_bytes>
 template<typename> 
   struct dynpatch;
 
-template<typename Fun, typename Fun2>
-  void hook (Fun&& fun, Fun2&& replacement);
+template<typename Fun>
+  void hook (Fun& fun, typename Fun::signature* replacement);
 struct scoped_hook;
+
+void* rebase (size_t);
+size_t unrebase (void const*);
 
 #include "patching.ipp"

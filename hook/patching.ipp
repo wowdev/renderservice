@@ -221,8 +221,8 @@ std::intptr_t search_pattern (char const* pattern, occurence_requirement occreq,
   abort();
 }
 
-template<typename Fun, typename Fun2>
-void hook (Fun&& fun, Fun2&& replacement)
+template<typename Fun>
+void hook (Fun& fun, typename Fun::signature* replacement)
 {
 #define FORCE(what_,...)	\
 	if (FAILED (__VA_ARGS__)) {\
