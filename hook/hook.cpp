@@ -11,7 +11,11 @@ BOOL APIENTRY DllMain (HMODULE, DWORD, LPVOID) { return TRUE; }
 #include <unordered_map>
 #include <fstream>
 #include <map>
+#include <set>
 #include <sstream>
+#include <iomanip>
+
+#include <boost/optional.hpp>
 
 #include "asm_x64.hpp"
 #include "patching.hpp"
@@ -29,8 +33,8 @@ struct callback_test_t
 };
 blz::static_function<callback_test_t, void, RenderRequest::RequestData*, route_arg_3_t*> const callback_test;
 
-#pragma pack(push, 1)
 using _BYTE = unsigned char;
+#pragma pack(push, 1)
 struct struc_6
 {
   const char *name;
@@ -38,7 +42,7 @@ struct struc_6
   int record_size;
   int num_fields;
   int id_column;
-  char field_18;
+  char sparseTable;
   _BYTE gap19[7];
   int *field_offsets;
   int *field_sizes;
@@ -47,30 +51,32 @@ struct struc_6
   int *field_sizes_in_file;
   int *field_types_in_file;
   int *field_flags_in_file;
-  int field_58;
+  char flags_58_2_1;
+  _BYTE gap59[3];
   int table_hash;
   _BYTE gap60[4];
   int layout_hash;
-  int field_68;
-  int field_6C;
-  int field_70;
+  char flags_68_4_2_1;
+  _BYTE gap69[3];
+  int nbUniqueIdxByInt;
+  int nbUniqueIdxByString;
   _BYTE gap74[4];
-  _UNKNOWN *field_78;
-  _BYTE gap80[8];
-  int field_88;
-  int field_8C;
-  int some_special_column;
+  unsigned int *uniqueIdxByInt;
+  unsigned int *uniqueIdxByString;
+  char bool_88;
+  _BYTE gap89[3];
+  int column_8C;
+  int column_90;
   _BYTE gap94[4];
-  __int64 sort_func;
+  bool (__stdcall *sort_func)(_UNKNOWN *, _UNKNOWN *);
   const char *table_name;
   const char **field_names_in_file;
   const char **field_names;
   const char *fk_clause;
-  char field_C0;
-  char field_C1;
+  char bool_C0;
 };
 #pragma pack(pop)
-static_assert(sizeof(struc_6) == 0xc2, "");
+static_assert(sizeof(struc_6) == 0xc1, "");
 
 struct wowdbclient {
   void* vtable;
@@ -97,97 +103,85 @@ std::string make_type(void const* addr, std::string type)
   return "MakeUnkn(" + ea(addr) + ", 1);SetType(" + ea(addr) + ", \"" + type + "\");";
 }
 
-std::string type_to_str (int t, int f)
+struct T {
+  std::string type;
+  boost::optional<int> bits;
+  T (std::string t, boost::optional<int> b = boost::none) : type (t), bits (b) {}
+};
+
+T type_to_T (int t, int f)
 try
-{
+{  
+  enum {
+    f_maybe_fk = 1,
+    f_maybe_compressed = 2, // according to simca
+    f_unsigned = 4,
+    f_localized = 8,
+  };
+  
   switch (t)
   {
     case 0:
       switch (f)
       {
-        case 0|0|0: 
-          return " int0?00"; // ???
-        case 0|0|1: 
-          return " int0?01"; // ???
-        case 0|2|0: 
-          return " int0?20"; // ???
-        case 0|2|1: 
-          return " int0?21"; // ???
-        case 4|0|0:
-          return "uint0?00"; // ???
-        case 4|0|1:
-          return "uint0?01"; // ???
-        case 4|2|0:
-          return "uint0?20"; // ???
-        case 4|2|1:
-          return "uint0?21"; // ???
-        default:
-          throw std::logic_error ("f != ???");
+        case           0|         0|                 0|         0:
+        case           0|         0|                 0|f_maybe_fk:
+        case           0|         0|f_maybe_compressed|         0:
+        case           0|         0|f_maybe_compressed|f_maybe_fk: 
+          return T ( "int", 32);
+        case           0|f_unsigned|                 0|         0:
+        case           0|f_unsigned|                 0|f_maybe_fk:
+        case           0|f_unsigned|f_maybe_compressed|         0:
+        case           0|f_unsigned|f_maybe_compressed|f_maybe_fk:
+          return T ("uint", 32);
       }
-    case 4:
+    case 1:                       // may never be an id
       switch (f)
       {
-        case 0|0|0: 
-          return " int4?00"; // ???
-        case 0|2|0: 
-          return " int4?20"; // ???
-        case 4|0|0: 
-          return "uint4?00"; // ???
-        case 4|2|0: 
-          return "uint4?20"; // ???
-        default:
-          throw std::logic_error ("f != ???");
-      }
-    case 5:
-      switch (f)
-      {
-        case 0|0|0: 
-          return " int5?00"; // ???
-        case 0|0|1: 
-          return " int5?01"; // ???
-        case 0|2|0: 
-          return " int5?20"; // ???
-        case 4|0|0: 
-          return "uint5?00"; // ???
-        case 4|0|1: 
-          return "uint5?01"; // ???
-        case 4|2|0: 
-          return "uint5?20"; // ???
-        case 4|2|1: 
-          return "uint5?21"; // ???
-        default:
-          throw std::logic_error ("f != ???");
-      }
-    case 1:
-      switch (f)
-      {
-        case 0|0|0: 
-          return " int1?00"; // ???
-        default:
-          throw std::logic_error ("f != ???");
+        case           0|         0|                 0|         0: 
+          return T ( "int", 64);
       }
     case 2:
       switch (f)
       {
-        case 0:
-          return "string";
-        case 8:
-          return "locstring";
-        default:
-          throw std::logic_error ("f != 0/8");
+        case           0|         0|                 0|         0:
+          return T ("string");
+        case f_localized|         0|                 0|         0:
+          return T ("locstring");
       }
     case 3:
       switch (f)
       {
-        case 0:
-          return "float";
-        case 2:
-          return "float?2"; // ???
-        default:
-          throw std::logic_error ("f != 0");
+        case           0|         0|                 0|         0:
+        case           0|         0|f_maybe_compressed|         0:
+          return T ("float");
+      }
+    case 4:
+      switch (f)
+      {
+        case           0|         0|                 0|         0:
+        case           0|         0|f_maybe_compressed|         0:
+          return T ( "int",  8);
+        case           0|f_unsigned|                 0|         0:
+        case           0|f_unsigned|f_maybe_compressed|         0:
+          return T ("uint",  8);
+      }
+    case 5:
+      switch (f)
+      {
+        case           0|         0|                 0|         0:
+        case           0|         0|                 0|f_maybe_fk:
+        case           0|         0|f_maybe_compressed|         0:
+        case           0|         0|f_maybe_compressed|f_maybe_fk: 
+          return T ( "int", 16);
+        case           0|f_unsigned|                 0|         0:
+        case           0|f_unsigned|                 0|f_maybe_fk:
+        case           0|f_unsigned|f_maybe_compressed|         0:
+        case           0|f_unsigned|f_maybe_compressed|f_maybe_fk:
+          return T ("uint", 16);
       }
     default:
-      throw std::logic_error ("unknown type");
+      throw std::logic_error ("unknown");
   }
 }
 catch (std::exception const& ex)
@@ -198,6 +192,8 @@ catch (std::exception const& ex)
 
 void dump_db_info_ida (wowdbclient* a)
 {
+  constexpr char const* const version = "8.0.1.26095";
+  
   std::string name = a->info->name;
   std::string ida_cmd;
   ida_cmd += "MakeName(" + ea (a) + ", \"db_" + a->info->name + "\");";
@@ -228,19 +224,113 @@ void dump_db_info_ida (wowdbclient* a)
       throw std::logic_error ("different type for column in file and memory");
   }
   
-  
+  //! \todo Is this the right default?!
+  if (a->info->id_column == -1)
+    dbdss << "int ID\n";
 
   for (auto const& name : names)
-    dbdss << type_to_str(name.second.first, name.second.second) << " " << name.first << "\n";
-  std::ofstream("E:/git/renderserver/tmp-" + name + ".dbd") << dbdss.str() << "\n";
+  {
+    auto t = type_to_T (name.second.first, name.second.second);
+    dbdss << t.type << " " << name.first << "\n";
+  }
+  
+  dbdss << "\n";
+  dbdss << "BUILD " << version << "\n";
+  auto formatflags = dbdss.flags();
+  dbdss << "LAYOUT " << std::setfill ('0') << std::setw(8) << std::uppercase << std::hex << a->info->layout_hash;
+  dbdss.flags (formatflags);
+  dbdss << "\n";
+  if (a->info->sparseTable) dbdss << "COMMENT table is sparse\n";
+  //! \todo Is this the right default?!
+  if (a->info->id_column == -1)
+    dbdss << "$noninlineid$ID<32>\n";
+  
+  for (int i = 0; i < a->info->num_fields_in_file; ++i) {
+    auto p = std::make_pair (a->info->field_types_in_file[i], a->info->field_flags_in_file[i]);
+    if (a->info->id_column == i)
+      dbdss << "$id$";
+    dbdss << a->info->field_names_in_file[i];
+    auto t = type_to_T (p.first, p.second);
+    if (t.bits) dbdss << "<" << t.bits.get() << ">";
+    if (a->info->field_sizes_in_file[i] != 1)
+      dbdss << "[" << a->info->field_sizes_in_file[i] << "]";
+    std::set<std::string> comments;
+    if (a->info->column_8C == i)
+      comments.emplace ("unk_8C");
+    if (a->info->column_90 == i)
+      comments.emplace ("unk_90");
+    
+    if (!comments.empty())
+    {
+      dbdss << " // ";
+      bool first = true;
+      // the one time I wish it was python. ", ".join (comments) is _so_ nice.
+      for (auto& comment : comments)
+      {
+        if (!first) dbdss << ", "; first = false;
+        dbdss << comment;
+      }
+    }
+    dbdss << "\n";
+  }
+  if (a->info->num_fields_in_file != a->info->num_fields) {
+    if (a->info->num_fields_in_file != a->info->num_fields - 1)
+      throw std::logic_error ("more than one unlisted file field");
+    
+    std::vector<std::string> m, f;
+    for (int i = 0; i < a->info->num_fields; ++i)
+      m.emplace_back (a->info->field_names[i]);
+    for (int i = 0; i < a->info->num_fields_in_file; ++i)
+      f.emplace_back (a->info->field_names_in_file[i]);
+   
+    auto const mismatch = std::mismatch (m.begin(), m.end(), f.begin(), f.end());
+    if (mismatch.second != f.end()) throw std::logic_error ("f != end");
+    if (std::distance (mismatch.first, m.end()) != 1) throw std::logic_error ("m+1 != end");
+    
+    auto i = a->info->num_fields_in_file;
+    auto p = std::make_pair (a->info->field_types[i], a->info->field_flags[i]);
+    auto t = type_to_T (p.first, p.second);
+    dbdss << "$relation$" << *mismatch.first;
+    if (t.bits) dbdss << "<" << t.bits.get() << ">";
+    if (a->info->field_sizes[i] != 1)
+      dbdss << "[" << a->info->field_sizes[i] << "]";
+    dbdss << " // relationship column\n";
+  }
+  
+  std::ofstream("E:/git/renderserver/tmp-" + name + ".dbd") << dbdss.str();
 }
 
 wowdbclient *__fastcall sub_1401F3480_hook(wowdbclient *db, wowdbclient::info_t *info)
+try
 {
   //std::cerr << "ctor " << info->name << "\n";
   sub_1401F3480 (db, info);
-  dump_db_info_ida (db);
+  dump_db_info_ida (db);    
+
+#define to_str_(x) #x
+#define to_str(x) to_str_(x)
+#define check(_col_) \
+  if (info->_col_) { std::string s (info->name); s += " "; s += to_str(_col_); s += "="; s += std::to_string (info->_col_); s += "\n"; std::ofstream("E:/git/renderserver/tmp.log", std::ios_base::app) << s; }
+#define check_col(_col_) \
+  if (info->_col_ != -1) { std::string s (info->name); s += " "; s += to_str(_col_); s += "="; s += std::to_string (info->_col_); s+=": "; s+=info->field_names[info->_col_]; s += "\n"; std::ofstream("E:/git/renderserver/tmp.log", std::ios_base::app) << s; }
+  //check_col (id_column);
+  check (flags_58_2_1);
+  check (flags_68_4_2_1);
+  check (bool_88);
+  check (bool_C0);
+  
+// #define _GAP_ gap94
+  // _BYTE* gap = info->_GAP_;
+  // for (int i = 0; i < sizeof (info->_GAP_); ++i)
+  // {
+    // if (info->_GAP_[i]) std::cerr << info->name << " " << to_str(_GAP_) << "[" << i << "]=" << std::to_string (info->_GAP_[i]) << "\n";
+  // }
+
   return db;
+}
+catch (std::exception const& ex)
+{
+  std::cerr << "EX: " << ex.what() << "\n";
 }
 
 void on_inject()
