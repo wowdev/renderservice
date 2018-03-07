@@ -30,11 +30,13 @@ endif()
 add_executable (RenderServiceInjector "injector.cpp")
 add_library (RenderServiceHook SHARED "hook.cpp")
 
+find_package (Boost REQUIRED)
+
 target_include_directories (RenderServiceInjector SYSTEM PRIVATE "${easyhook_include}")
 target_include_directories (RenderServiceHook SYSTEM PRIVATE "${easyhook_include}")
 
 target_link_libraries (RenderServiceInjector ${easyhook_lib})
-target_link_libraries (RenderServiceHook Psapi ${easyhook_lib})
+target_link_libraries (RenderServiceHook Psapi ${easyhook_lib} Boost::boost)
 
 install (TARGETS RenderServiceInjector RenderServiceHook DESTINATION ".")
 install (FILES "${easyhook_redist}" DESTINATION ".")
