@@ -85,11 +85,13 @@ struct wowdbclient {
 };
 //! \note hardcoded to 8.0.1.26095
 fun<bool (wowdbclient*, char const*, char const*, unsigned int)> db_load_with_dbgenfallback
-  = 0x1401F7A30;
+  = search_pattern ("48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 48 81 EC 40 01 00 00 41 8B D9 49 8B E8 48 8B F2");
 fun<bool (wowdbclient*, unsigned int)> db_load_with_dbgenfallback_no_override
-  = 0x1401F7B20;
-fun<wowdbclient* (wowdbclient*, wowdbclient::info_t*)> sub_1401F3480 = 0x1401F3480;
-fun<bool()> renderservice_main = 0x14005D670;
+  = search_pattern ("48 89 5C 24 08 57 48 81 EC 40 01 00 00 8B DA 48 8B F9 F6 C2 01 0F 84 AE 00 00 00 48 8B 01 4C 8D");
+fun<wowdbclient* (wowdbclient*, wowdbclient::info_t*)> sub_1401F3480
+  = search_pattern ("40 53 48 83 EC 50 48 8D 05 ?? ?? ?? ?? 48 89 51 08 48 89 01 48 8B D9 48 83 C1 20 E8");
+fun<bool()> renderservice_main
+  = search_pattern ("48 8B C4 55 53 56 48 8D A8 ?? ?? FF FF 48 81 EC ?? ?? 00 00");
 
 std::string ea(void const* addr)
 {
@@ -192,7 +194,7 @@ catch (std::exception const& ex)
 
 void dump_db_info_ida (wowdbclient* a)
 {
-  constexpr char const* const version = "8.0.1.26095";
+  constexpr char const* const version = "8.0.1.26175";
   
   std::string name = a->info->name;
   std::string ida_cmd;

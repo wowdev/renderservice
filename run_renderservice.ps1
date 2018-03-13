@@ -23,7 +23,7 @@ Write "</config>" | Out-File -Append "$tmppath"
 
 cat $tmppath
 
-$cmdline = "$install_dir\RenderService-64.exe -port $port -config $tmppath -level $gxlevel -debugFrame 1"
+$cmdline = "$install_dir\$rs_exe -port $port -config $tmppath -level $gxlevel -debugFrame 1"
 
 $cmdline
 & { 
