@@ -4,6 +4,8 @@ enum occurence_requirement {
 	allow_multiple,
 	require_unique,
 };
+std::pair<std::intptr_t, std::size_t> search_pattern_or_null_p (char const* pattern, size_t after = 0);
+std::intptr_t search_pattern_or_null (char const* pattern, occurence_requirement occreq = require_unique, size_t after = 0);
 std::intptr_t search_pattern (char const* pattern, occurence_requirement occreq = require_unique, size_t after = 0);
 
 template<typename T, bool unprotect>

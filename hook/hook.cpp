@@ -85,9 +85,14 @@ struct wowdbclient {
 };
 //! \note hardcoded to 8.0.1.26095
 fun<bool (wowdbclient*, char const*, char const*, unsigned int)> db_load_with_dbgenfallback
-  = search_pattern ("48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 48 81 EC 40 01 00 00 41 8B D9 49 8B E8 48 8B F2");
+  = [] {
+    auto a = search_pattern_or_null ("48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 48 81 EC 40 01 00 00 41 8B D9 49 8B E8 48 8B F2");
+    auto b = search_pattern_or_null ("48 89 5C 24 08 57 48 81 EC 50 02 00 00 8B DA");
+    if (a && b) throw std::logic_error ("found both patterns");
+    return a | b;
+  }();
 fun<bool (wowdbclient*, unsigned int)> db_load_with_dbgenfallback_no_override
-  = search_pattern ("48 89 5C 24 08 57 48 81 EC 40 01 00 00 8B DA 48 8B F9 F6 C2 01 0F 84 AE 00 00 00 48 8B 01 4C 8D");
+  = search_pattern_or_null ("48 89 5C 24 08 57 48 81 EC 40 01 00 00 8B DA 48 8B F9 F6 C2 01 0F 84 AE 00 00 00 48 8B 01 4C 8D");
 fun<wowdbclient* (wowdbclient*, wowdbclient::info_t*)> sub_1401F3480
   = search_pattern ("40 53 48 83 EC 50 48 8D 05 ?? ?? ?? ?? 48 89 51 08 48 89 01 48 8B D9 48 83 C1 20 E8");
 fun<bool()> renderservice_main
@@ -333,11 +338,13 @@ try
 catch (std::exception const& ex)
 {
   std::cerr << "EX: " << ex.what() << "\n";
+  return nullptr;
 }
 
 void on_inject()
 {
   std::ofstream("E:/git/renderserver/tmp.ida.py") << "\n";
+  std::ofstream("E:/git/renderserver/tmp.log") << "\n";
   hook (sub_1401F3480, sub_1401F3480_hook);
   
   hook ( db_load_with_dbgenfallback
@@ -349,16 +356,16 @@ void on_inject()
            return db_load_with_dbgenfallback (a, b, c, d);
          }
        );
-  hook ( db_load_with_dbgenfallback_no_override
-       , [] (wowdbclient* a, unsigned int b)
-         {
-           if (std::string (a->info->name) == "AnimationNames") return true;
-           if (std::string (a->info->name) == "FileDataComplete") return true;
-           if (std::string (a->info->name) == "FilePaths") return true;
-           return db_load_with_dbgenfallback_no_override (a, b);
-         }
-       );
-
+  if (db_load_with_dbgenfallback_no_override._offset)
+    hook ( db_load_with_dbgenfallback_no_override
+         , [] (wowdbclient* a, unsigned int b)
+           {
+             if (std::string (a->info->name) == "AnimationNames") return true;
+             if (std::string (a->info->name) == "FileDataComplete") return true;
+             if (std::string (a->info->name) == "FilePaths") return true;
+             return db_load_with_dbgenfallback_no_override (a, b);
+           }
+         );
        
   hook ( CVarRegister
        , [] (char const* name, char const* a, unsigned int b, char const* c, bool (*d)(CVar*, char const*, char const*, void *), unsigned int e, bool f, void * g, bool h)

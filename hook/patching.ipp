@@ -168,7 +168,7 @@ namespace
   }  
 }
 
-std::intptr_t search_pattern (char const* pattern, occurence_requirement occreq, size_t after)
+std::pair<std::intptr_t, std::size_t> search_pattern_or_null_p (char const* pattern, size_t after)
 {
   constexpr std::intptr_t const rebase_base(0x140000000);
   MODULEINFO info;
@@ -204,19 +204,30 @@ std::intptr_t search_pattern (char const* pattern, occurence_requirement occreq,
     ++ptr;
   }
   
-  //std::cerr << "find pattern (" << occurences << " times): " << pattern << " -> " << std::hex << found_at << "\n";
-		
-  if (found_at)
+  return {found_at, occurences};
+}
+
+std::intptr_t search_pattern_or_null (char const* pattern, occurence_requirement occreq, size_t after)
+{
+  auto x = search_pattern_or_null_p (pattern, after);
+  if (x.first)
   {
-  	if (occreq == require_unique && occurences != 1) 
+    if (occreq == require_unique && x.second != 1)
     {
 	    std::cerr << "found pattern '" << pattern << "' twice!\n";
 	    abort();
     }
-    
-	  return found_at;
   }
-  
+  return x.first;
+}
+
+std::intptr_t search_pattern (char const* pattern, occurence_requirement occreq, size_t after)
+{
+  auto x = search_pattern_or_null (pattern, occreq, after);
+  if (x)
+  {
+    return x;
+  }
   std::cerr << "unable to find pattern " << pattern << "\n";
   abort();
 }
