@@ -199,7 +199,7 @@ catch (std::exception const& ex)
 
 void dump_db_info_ida (wowdbclient* a)
 {
-  constexpr char const* const version = "8.0.1.26175";
+  constexpr char const* const version = "8.0.1.26287";
   
   std::string name = a->info->name;
   std::string ida_cmd;
@@ -238,34 +238,43 @@ void dump_db_info_ida (wowdbclient* a)
   for (auto const& name : names)
   {
     auto t = type_to_T (name.second.first, name.second.second);
-    dbdss << t.type << " " << name.first << "\n";
+    if(t.type == "locstring"){
+      dbdss << t.type << " " << name.first << "_lang\n";
+    }else{
+      dbdss << t.type << " " << name.first << "\n";
+    }
   }
   
   dbdss << "\n";
-  dbdss << "BUILD " << version << "\n";
   auto formatflags = dbdss.flags();
   dbdss << "LAYOUT " << std::setfill ('0') << std::setw(8) << std::uppercase << std::hex << a->info->layout_hash;
   dbdss.flags (formatflags);
   dbdss << "\n";
+  dbdss << "BUILD " << version << "\n";
   if (a->info->sparseTable) dbdss << "COMMENT table is sparse\n";
   //! \todo Is this the right default?!
   if (a->info->id_column == -1)
-    dbdss << "$noninlineid$ID<32>\n";
+    dbdss << "$noninline,id$ID<32>\n";
   
   for (int i = 0; i < a->info->num_fields_in_file; ++i) {
     auto p = std::make_pair (a->info->field_types_in_file[i], a->info->field_flags_in_file[i]);
     if (a->info->id_column == i)
       dbdss << "$id$";
+    if (a->info->column_8C == i){
+      dbdss << "$relation$";
+      if (a->info->column_90 != i){
+        throw std::logic_error ("no unk_90 but there is unk_8C send help");
+      }
+    }
     dbdss << a->info->field_names_in_file[i];
     auto t = type_to_T (p.first, p.second);
+    if(t.type == "locstring"){
+      dbdss << "_lang";
+    }
     if (t.bits) dbdss << "<" << t.bits.get() << ">";
     if (a->info->field_sizes_in_file[i] != 1)
       dbdss << "[" << a->info->field_sizes_in_file[i] << "]";
     std::set<std::string> comments;
-    if (a->info->column_8C == i)
-      comments.emplace ("unk_8C");
-    if (a->info->column_90 == i)
-      comments.emplace ("unk_90");
     
     if (!comments.empty())
     {
@@ -297,11 +306,13 @@ void dump_db_info_ida (wowdbclient* a)
     auto i = a->info->num_fields_in_file;
     auto p = std::make_pair (a->info->field_types[i], a->info->field_flags[i]);
     auto t = type_to_T (p.first, p.second);
-    dbdss << "$relation$" << *mismatch.first;
+    dbdss << "$noninline,relation$" << *mismatch.first;
+    if(t.type == "locstring"){
+      dbdss << "_lang";
+    }
     if (t.bits) dbdss << "<" << t.bits.get() << ">";
     if (a->info->field_sizes[i] != 1)
       dbdss << "[" << a->info->field_sizes[i] << "]";
-    dbdss << " // relationship column\n";
   }
   
   std::ofstream("E:/git/renderserver/tmp-" + name + ".dbd") << dbdss.str();
