@@ -38,12 +38,13 @@ using _BYTE = unsigned char;
 struct struc_6
 {
   const char *name;
+  int fileDataID;
   int num_fields_in_file;
   int record_size;
   int num_fields;
   int id_column;
   char sparseTable;
-  _BYTE gap19[7];
+  _BYTE gap19[3];
   int *field_offsets;
   int *field_sizes;
   int *field_types;
@@ -199,7 +200,7 @@ catch (std::exception const& ex)
 
 void dump_db_info_ida (wowdbclient* a)
 {
-  constexpr char const* const version = "8.0.1.26287";
+  constexpr char const* const version = "8.0.1.26297";
   
   std::string name = a->info->name;
   std::string ida_cmd;
