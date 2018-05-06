@@ -14,6 +14,7 @@ BOOL APIENTRY DllMain (HMODULE, DWORD, LPVOID) { return TRUE; }
 #include <set>
 #include <sstream>
 #include <iomanip>
+#include <random>
 
 #include <boost/optional.hpp>
 
@@ -90,14 +91,17 @@ fun<bool (wowdbclient*, char const*, char const*, unsigned int)> db_load_with_db
     auto a = search_pattern_or_null ("48 89 5C 24 08 48 89 6C 24 10 48 89 74 24 18 57 48 81 EC 40 01 00 00 41 8B D9 49 8B E8 48 8B F2");
     auto b = search_pattern_or_null ("48 89 5C 24 08 57 48 81 EC 50 02 00 00 8B DA");
     if (a && b) throw std::logic_error ("found both patterns");
+    // if (!(a || b)) throw std::logic_error ("found both patterns");
     return a | b;
   }();
 fun<bool (wowdbclient*, unsigned int)> db_load_with_dbgenfallback_no_override
   = search_pattern_or_null ("48 89 5C 24 08 57 48 81 EC 40 01 00 00 8B DA 48 8B F9 F6 C2 01 0F 84 AE 00 00 00 48 8B 01 4C 8D");
 fun<wowdbclient* (wowdbclient*, wowdbclient::info_t*)> sub_1401F3480
-  = search_pattern ("40 53 48 83 EC 50 48 8D 05 ?? ?? ?? ?? 48 89 51 08 48 89 01 48 8B D9 48 83 C1 20 E8");
-fun<bool()> renderservice_main
-  = search_pattern ("48 8B C4 55 53 56 48 8D A8 ?? ?? FF FF 48 81 EC ?? ?? 00 00");
+  = search_pattern ("40 53 48 83 EC 50 48 89 51 08 48 8D 05 ?? ?? ?? ?? 48 89 01 48 8B D9");
+var<char> version_string
+  = search_pattern ("52 65 6e 64 65 72 53 65 72 76 69 63 65 20") + strlen ("RenderService ");
+// fun<bool()> renderservice_main
+  // = search_pattern ("48 8B C4 55 53 56 48 8D A8 ?? ?? FF FF 48 81 EC ?? ?? 00 00");
 
 std::string ea(void const* addr)
 {
@@ -198,10 +202,23 @@ catch (std::exception const& ex)
   throw;
 }
 
+unsigned int get_seed() {
+    static std::random_device r;
+    static auto seed = r();
+    return seed;
+}
+
+struct name_gen {
+    std::default_random_engine e1;
+    name_gen() : e1(get_seed()) {}
+std::string operator()() {
+    std::uniform_int_distribution<std::uint32_t> uniform_dist;
+    return "field_" + std::to_string (uniform_dist (e1));
+  }
+};
+
 void dump_db_info_ida (wowdbclient* a)
 {
-  constexpr char const* const version = "8.0.1.26297";
-  
   std::string name = a->info->name;
   std::string ida_cmd;
   ida_cmd += "MakeName(" + ea (a) + ", \"db_" + a->info->name + "\");";
@@ -216,20 +233,18 @@ void dump_db_info_ida (wowdbclient* a)
   dbdss << "COLUMNS\n";
   
   std::map<std::string, std::pair<int /*type*/, int /*flags*/>> names;
+
+  name_gen namegen1;
   
   for (int i = 0; i < a->info->num_fields_in_file; ++i) {
     auto p = std::make_pair (a->info->field_types_in_file[i], a->info->field_flags_in_file[i]);
-    if ( !names.emplace (a->info->field_names_in_file[i], p).second
-      && names.at (a->info->field_names_in_file[i]) != p
-        )
-      throw std::logic_error ("different type for column in file and memory");
+    auto name = namegen1();
+    names.emplace (name, p);
   }
-  for (int i = 0; i < a->info->num_fields; ++i) {
-    auto p = std::make_pair (a->info->field_types[i], a->info->field_flags[i]);
-    if ( !names.emplace (a->info->field_names[i], p).second
-      && names.at (a->info->field_names[i]) != p
-        )
-      throw std::logic_error ("different type for column in file and memory");
+  if (a->info->num_fields_in_file != a->info->num_fields) {
+    auto p = std::make_pair (a->info->field_types[a->info->num_fields_in_file], a->info->field_flags[a->info->num_fields_in_file]);
+    auto name = namegen1();
+    names.emplace (name, p);
   }
   
   //! \todo Is this the right default?!
@@ -240,9 +255,9 @@ void dump_db_info_ida (wowdbclient* a)
   {
     auto t = type_to_T (name.second.first, name.second.second);
     if(t.type == "locstring"){
-      dbdss << t.type << " " << name.first << "_lang\n";
+      dbdss << t.type << " " << name.first << "_lang?\n";
     }else{
-      dbdss << t.type << " " << name.first << "\n";
+      dbdss << t.type << " " << name.first << "?\n";
     }
   }
   
@@ -251,12 +266,13 @@ void dump_db_info_ida (wowdbclient* a)
   dbdss << "LAYOUT " << std::setfill ('0') << std::setw(8) << std::uppercase << std::hex << a->info->layout_hash;
   dbdss.flags (formatflags);
   dbdss << "\n";
-  dbdss << "BUILD " << version << "\n";
+  dbdss << "BUILD 8.0.1." << version_string.operator->() << "\n";
   if (a->info->sparseTable) dbdss << "COMMENT table is sparse\n";
   //! \todo Is this the right default?!
   if (a->info->id_column == -1)
     dbdss << "$noninline,id$ID<32>\n";
   
+  name_gen namegen2;
   for (int i = 0; i < a->info->num_fields_in_file; ++i) {
     auto p = std::make_pair (a->info->field_types_in_file[i], a->info->field_flags_in_file[i]);
     if (a->info->id_column == i)
@@ -267,7 +283,7 @@ void dump_db_info_ida (wowdbclient* a)
         throw std::logic_error ("no unk_90 but there is unk_8C send help");
       }
     }
-    dbdss << a->info->field_names_in_file[i];
+    dbdss << namegen2();
     auto t = type_to_T (p.first, p.second);
     if(t.type == "locstring"){
       dbdss << "_lang";
@@ -291,23 +307,10 @@ void dump_db_info_ida (wowdbclient* a)
     dbdss << "\n";
   }
   if (a->info->num_fields_in_file != a->info->num_fields) {
-    if (a->info->num_fields_in_file != a->info->num_fields - 1)
-      throw std::logic_error ("more than one unlisted file field");
-    
-    std::vector<std::string> m, f;
-    for (int i = 0; i < a->info->num_fields; ++i)
-      m.emplace_back (a->info->field_names[i]);
-    for (int i = 0; i < a->info->num_fields_in_file; ++i)
-      f.emplace_back (a->info->field_names_in_file[i]);
-   
-    auto const mismatch = std::mismatch (m.begin(), m.end(), f.begin(), f.end());
-    if (mismatch.second != f.end()) throw std::logic_error ("f != end");
-    if (std::distance (mismatch.first, m.end()) != 1) throw std::logic_error ("m+1 != end");
-    
     auto i = a->info->num_fields_in_file;
     auto p = std::make_pair (a->info->field_types[i], a->info->field_flags[i]);
     auto t = type_to_T (p.first, p.second);
-    dbdss << "$noninline,relation$" << *mismatch.first;
+    dbdss << "$noninline,relation$" << namegen2();
     if(t.type == "locstring"){
       dbdss << "_lang";
     }
@@ -358,56 +361,60 @@ void on_inject()
   std::ofstream("E:/git/renderserver/tmp.ida.py") << "\n";
   std::ofstream("E:/git/renderserver/tmp.log") << "\n";
   hook (sub_1401F3480, sub_1401F3480_hook);
-  
-  hook ( db_load_with_dbgenfallback
-       , [] (wowdbclient* a, char const* b, char const* c, unsigned int d)
-         {
-           if (std::string (a->info->name) == "AnimationNames") return true;
-           if (std::string (a->info->name) == "FileDataComplete") return true;
-           if (std::string (a->info->name) == "FilePaths") return true;
-           return db_load_with_dbgenfallback (a, b, c, d);
-         }
-       );
-  if (db_load_with_dbgenfallback_no_override._offset)
-    hook ( db_load_with_dbgenfallback_no_override
-         , [] (wowdbclient* a, unsigned int b)
-           {
-             if (std::string (a->info->name) == "AnimationNames") return true;
-             if (std::string (a->info->name) == "FileDataComplete") return true;
-             if (std::string (a->info->name) == "FilePaths") return true;
-             return db_load_with_dbgenfallback_no_override (a, b);
-           }
-         );
-       
-  hook ( CVarRegister
-       , [] (char const* name, char const* a, unsigned int b, char const* c, bool (*d)(CVar*, char const*, char const*, void *), unsigned int e, bool f, void * g, bool h)
-         {
-           return CVarRegister (name, a, b, c, d, e, f, g, h);
-         }
-       );
+  std::ofstream("C:/Users/Martin/Documents/GitHub/renderserver/tmp.log") << __LINE__ << "\n";
 
-  hook ( add_route_a
-       , [] (char const* path, blz::function<void, RenderRequest::RequestData*, route_arg_3_t*> const* fun)
-         {
-           std::cerr << "add route a: " << path << "\n";
-           return add_route_a (path, fun);
-         }
-       );
-  hook ( add_route_b
-       , [] (char const* path, blz::function<void, RenderRequest::RequestData*, route_arg_3_t*> const* fun)
-         {
-           std::cerr << "add route b: " << path << "\n";
-           return add_route_b (path, fun);
-         }
-       );
+  // hook ( db_load_with_dbgenfallback
+  //      , [] (wowdbclient* a, char const* b, char const* c, unsigned int d)
+  //        {
+  //          if (std::string (a->info->name) == "AnimationNames") return true;
+  //          if (std::string (a->info->name) == "FileDataComplete") return true;
+  //          if (std::string (a->info->name) == "FilePaths") return true;
+  //          return db_load_with_dbgenfallback (a, b, c, d);
+  //        }
+  //      );
+  //   std::ofstream("C:/Users/Martin/Documents/GitHub/renderserver/tmp.log") << __LINE__ << "\n";
+
+  // if (db_load_with_dbgenfallback_no_override._offset)
+  //   hook ( db_load_with_dbgenfallback_no_override
+  //        , [] (wowdbclient* a, unsigned int b)
+  //          {
+  //            if (std::string (a->info->name) == "AnimationNames") return true;
+  //            if (std::string (a->info->name) == "FileDataComplete") return true;
+  //            if (std::string (a->info->name) == "FilePaths") return true;
+  //            return db_load_with_dbgenfallback_no_override (a, b);
+  //          }
+  //        );
+  //        std::ofstream("C:/Users/Martin/Documents/GitHub/renderserver/tmp.log") << __LINE__ << "\n";
+
+  // hook ( CVarRegister
+  //      , [] (char const* name, char const* a, unsigned int b, char const* c, bool (*d)(CVar*, char const*, char const*, void *), unsigned int e, bool f, void * g, bool h)
+  //        {
+  //          return CVarRegister (name, a, b, c, d, e, f, g, h);
+  //        }
+  //      );
+
+  // hook ( add_route_a
+  //      , [] (char const* path, blz::function<void, RenderRequest::RequestData*, route_arg_3_t*> const* fun)
+  //        {
+  //          std::cerr << "add route a: " << path << "\n";
+  //          return add_route_a (path, fun);
+  //        }
+  //      );
+  // hook ( add_route_b
+  //      , [] (char const* path, blz::function<void, RenderRequest::RequestData*, route_arg_3_t*> const* fun)
+  //        {
+  //          std::cerr << "add route b: " << path << "\n";
+  //          return add_route_b (path, fun);
+  //        }
+  //      );
    
-  hook ( renderservice_main
-       , []
-         {
-           add_route ("/test", &callback_test);
-           return renderservice_main();
-         }
-       );
+  // hook ( renderservice_main
+  //      , []
+  //        {
+  //          add_route ("/test", &callback_test);
+  //          return renderservice_main();
+  //        }
+  //      );
 }
 
 

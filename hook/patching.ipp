@@ -33,7 +33,7 @@ namespace
     GetModuleInformation(GetCurrentProcess(), GetModuleHandle (nullptr), &info, sizeof (info));
     return static_cast<char*> (info.lpBaseOfDll);
   }
-  constexpr std::intptr_t const rebase_base(0x140000000);
+  constexpr std::intptr_t const rebase_base(0x400000);
 }
 
 inline void* rebase (std::size_t offset)
@@ -170,7 +170,7 @@ namespace
 
 std::pair<std::intptr_t, std::size_t> search_pattern_or_null_p (char const* pattern, size_t after)
 {
-  constexpr std::intptr_t const rebase_base(0x140000000);
+  constexpr std::intptr_t const rebase_base(0x400000);
   MODULEINFO info;
   GetModuleInformation(GetCurrentProcess(), GetModuleHandle(nullptr), &info, sizeof(info));
   
