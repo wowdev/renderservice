@@ -21,7 +21,7 @@ if(!(Test-Path -Path $script_dir/hook-build)) {
         Invoke-WebRequest -Uri "https://dist.nuget.org/win-x86-commandline/latest/nuget.exe" -OutFile nuget.exe
     }
 
-    & "./nuget.exe" install EasyHookNativePackage
+    & "./nuget.exe" install EasyHookNativePackage -version "2.7.6578.1"
 
 	& cmake -DCMAKE_INSTALL_PREFIX="${script_dir}/hook-install" -G"$msvcpp" ../hook
 	cd ..

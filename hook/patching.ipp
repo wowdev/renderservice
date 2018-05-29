@@ -103,7 +103,7 @@ struct patch : public var<unsigned char[sizeof... (nth_bytes)]>
 {
 	unsigned char original[sizeof... (nth_bytes)];
 	patch(size_t offset)
-    : var (offset)
+    : var<unsigned char[sizeof... (nth_bytes)]> (offset)
 	{
 		maybe_rebase();
 		memcpy(original, _x, sizeof... (nth_bytes));
